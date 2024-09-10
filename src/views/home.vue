@@ -40,9 +40,9 @@ const switchMenu = (item, index) => {
 <style scoped>
 .container {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .left-menu {
@@ -72,8 +72,10 @@ li.active {
 }
 
 .right-content {
-  padding: 0 2.5rem;
+  box-sizing: border-box;
+  padding: 1.5rem;
   width: 100%;
+  height: calc(100vh - 60px);
   overflow-y: auto;
 }
 
