@@ -1,11 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
-<AnNumberAnimation :num="8999999" :duration="3"></AnNumberAnimation>
+  <an-number-animation :num="2648609927" duration="1"/>
 </template>
-
-<style scoped lang="scss">
-
-</style>

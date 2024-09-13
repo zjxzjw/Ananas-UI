@@ -1,5 +1,5 @@
 ## Radio 单选
-<h5 style="color: #66d476">苦酒折柳今相离，无风无月也无你。</h5>
+<h5 style="color: #66d476">苦酒折柳今相离，无风无月也无你</h5>
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
@@ -96,10 +96,3 @@
   }
 </script>
 <ApiTable :data="data" />
-
-<!-- 底部导航 -->
-<script setup>
-    import BottomTabs from '../../../src/components/bottom_tabs.vue'
-</script>
-
-<BottomTabs up="Button" down="Select" />

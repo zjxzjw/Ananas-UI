@@ -1,5 +1,5 @@
 ## Tree 树
-<h5 style="color: #66d476">再快的86也追不上奔驰。</h5>
+<h5 style="color: #66d476">再快的86也追不上奔驰</h5>
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
@@ -84,10 +84,3 @@
   }
 </script>
 <ApiTable :data="data" />
-
-<!-- 底部导航 -->
-<script setup>
-    import BottomTabs from '../../../src/components/bottom_tabs.vue'
-</script>
-
-<BottomTabs up="Breadcrumb" down="Message" />

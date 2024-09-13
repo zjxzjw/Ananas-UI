@@ -1,5 +1,5 @@
 ## Space 间距
-<h5 style="color: #66d476">你站的方位，跟我中间隔着泪。</h5>
+<h5 style="color: #66d476">你站的方位，跟我中间隔着泪</h5>
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
@@ -60,10 +60,3 @@
   }
 </script>
 <ApiTable :data="data" />
-
-<!-- 底部导航 -->
-<script setup>
-    import BottomTabs from '../../../src/components/bottom_tabs.vue'
-</script>
-
-<BottomTabs up="Tag" down="Button" />

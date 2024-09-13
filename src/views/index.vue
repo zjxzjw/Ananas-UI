@@ -6,7 +6,7 @@
       <span class="title_ui"> UI</span>
     </div>
     <div class="tip"><!--等到秋叶终于金黄，等到华发悄然苍苍-->
-      <Typewriter :texts="['你说把爱渐渐放下会走更远', '微风需要竹林，溪流需要蜻蜓', '一个看起来像热带水果风味的 Vue3 UI组件库', 'Ananas UI', '一个看起来像热带水果风味的 Vue3 UI组件库']"/>
+      <Typewriter :texts="['在我们相遇之前，是否把时钟拨快一点', '你说把爱渐渐放下会走更远', '微风需要竹林，溪流需要蜻蜓', '来不及听见，你已走的很远','一个看起来像热带水果风味的 Vue3 UI组件库']"/>
     </div>
     <div class="text">一个看起来像热带水果风味的 Vue3 UI组件库</div>
 

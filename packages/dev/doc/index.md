@@ -3,10 +3,3 @@
 
 ##### 
 <a style="text-decoration: none; color: #ffcf3f" href="https://www.yuque.com/u37899385/swciur/adg67dfiyb0v7l6s?singleDoc#efYE 《AnanasUI任务汇总》 密码：csgu">点我进入语雀任务文档！</a>
-
-<!-- 底部导航 -->
-<script setup>
-    import BottomTabs from '../../../src/components/bottom_tabs.vue'
-</script>
-
-<BottomTabs up="Logs" down="Install" />

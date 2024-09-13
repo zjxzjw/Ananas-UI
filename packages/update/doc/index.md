@@ -13,10 +13,3 @@
 - 更新: 优化部分组件
 #### 2024-05-17
 - 初始化项目工程
-
-<!-- 底部导航 -->
-<script setup>
-    import BottomTabs from '../../../src/components/bottom_tabs.vue'
-</script>
-
-<BottomTabs up="Ananas" down="Dev" />

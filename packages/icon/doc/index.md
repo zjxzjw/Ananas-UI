@@ -1,5 +1,5 @@
 ## Icon 图标
-<h5 style="color: #66d476">流星在下坠，记忆在消退。</h5>
+<h5 style="color: #66d476">流星在下坠，记忆在消退</h5>
 
 <script setup>
 import BasicDemo from '../demo/basic_demo.vue'
@@ -53,10 +53,3 @@ import Preview from '../../../src/components/preview.vue'
   }
 </script>
 <ApiTable :data="data" />
-
-<!-- 底部导航 -->
-<script setup>
-    import BottomTabs from '../../../src/components/bottom_tabs.vue'
-</script>
-
-<BottomTabs up="Table" down="下面没有了..." />

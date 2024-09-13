@@ -5,10 +5,3 @@
 <h6>了解如何使用 <router-link to="/fast" style="color: #66d476;">快速开始</router-link></h6>
 
 <h6 style="color: ;">Tips: 好吧，颜色看起来有点像热带水果</h6>
-
-<!-- 底部导航 -->
-<script setup>
-    import BottomTabs from '../../../src/components/bottom_tabs.vue'
-</script>
-
-<BottomTabs up="上面没有了..." down="Logs" />

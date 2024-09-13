@@ -11,10 +11,3 @@
 
 ##### 持续更新中~
 
-<!-- 底部导航 -->
-<script setup>
-    import BottomTabs from '../../../src/components/bottom_tabs.vue'
-</script>
-
-<BottomTabs up="Dev" down="Fast" />
-

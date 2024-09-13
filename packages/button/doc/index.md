@@ -1,5 +1,5 @@
 ## Button 按钮
-<h5 style="color: #66d476">冒着掉眼泪的风险，2024 没联系方式的爱你。</h5>
+<h5 style="color: #66d476">冒着掉眼泪的风险，2024 没联系方式的爱你</h5>
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
@@ -120,10 +120,3 @@
   }
 </script>
 <ApiTable :data="data" />
-
-<!-- 底部导航 -->
-<script setup>
-    import BottomTabs from '../../../src/components/bottom_tabs.vue'
-</script>
-
-<BottomTabs up="Space" down="Radio" />

@@ -1,5 +1,5 @@
 ## Select 选择器
-<h5 style="color: #66d476">这么多选择，偏偏选择了你。</h5>
+<h5 style="color: #66d476">这么多选择，偏偏选择了你</h5>
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
@@ -120,10 +120,3 @@
   }
 </script>
 <ApiTable :data="data" />
-
-<!-- 底部导航 -->
-<script setup>
-    import BottomTabs from '../../../src/components/bottom_tabs.vue'
-</script>
-
-<BottomTabs up="Radio" down="Input" />

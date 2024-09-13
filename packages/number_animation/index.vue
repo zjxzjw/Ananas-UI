@@ -1,46 +1,56 @@
 <template>
-  <span>{{ current }}</span>
+  <span class="number-animation">{{ current }}</span>
 </template>
 
 <script>
 export default {
-  name: 'AnNumberAnimation',
-  props: {
-    num: {
-      type: Number,
-      default: 0
-    },
-    duration: {
-      type: Number,
-      default: 2
-    }
-  },
-  data() {
-    return {
-      current: '0'
-    };
-  },
-  methods: {
-    numberGrow() {
-      let step = Math.ceil((this.num * 100) / (this.duration * 1000));
-      let start = 0;
-      let timer = setInterval(() => {
-        start += step;
-        if (start > this.num) {
-          clearInterval(timer);
-          start = this.num;
-          timer = null;
-        }
-        if (start === 0) {
-          start = this.num;
-          clearInterval(timer);
-        }
-        this.current = start.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,');
-      }, this.duration * 100);
-    }
-  },
-  mounted() {
-    this.numberGrow();
-  }
+  name: 'AnNumberAnimation'
 }
 </script>
+
+<script setup>
+const props = defineProps({
+  num: {
+    type: Number,
+    default: 0
+  },
+  duration: {
+    type: Number,
+    default: 1000
+  },
+  size: {
+    type: String,
+    default: '24px'
+  }
+});
+
+let current = ref('');
+
+const numberGrow = () => {
+  let step = Math.ceil((props.num * 100) / (props.duration * 1000));
+  let start = 0;
+  let timer = setInterval(() => {
+    start += step;
+    if (start > props.num) {
+      clearInterval(timer);
+      start = props.num;
+      timer = null;
+    }
+    if (start === 0) {
+      start = props.num;
+      clearInterval(timer);
+    }
+    current.value = start.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,');
+  }, props.duration * 100);
+}
+
+onMounted(() => {
+  numberGrow();
+})
+</script>
+
+<style scoped lang="scss">
+.number-animation {
+  font-size: v-bind(size);
+}
+</style>

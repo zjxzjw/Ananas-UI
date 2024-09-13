@@ -1,5 +1,5 @@
 ## Textarea 文本域
-<h5 style="color: #66d476">只有找到属于自己的世界人生才有意义。</h5>
+<h5 style="color: #66d476">只有找到属于自己的世界，人生才有意义</h5>
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
@@ -114,10 +114,3 @@
   }
 </script>
 <ApiTable :data="data" />
-
-<!-- 底部导航 -->
-<script setup>
-    import BottomTabs from '../../../src/components/bottom_tabs.vue'
-</script>
-
-<BottomTabs up="Input" down="Breadcrumb" />
