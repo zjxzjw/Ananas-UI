@@ -97,6 +97,16 @@ export default [
         component: () => import('@packages/card/doc/index.md')
       },
       {
+        path: '/numberAnimation',
+        name: 'NumberAnimation 数值动画',
+        component: () => import('@packages/number_animation/doc/index.md')
+      },
+      {
+        path: '/ellipsis',
+        name: 'Ellipsis 文本省略',
+        component: () => import('@packages/ellipsis/doc/index.md')
+      },
+      {
         path: '/abc',
         name: '持续更新中~',
         component: () => import('@packages/dev/doc/index.md')
