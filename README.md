@@ -46,6 +46,10 @@ app.mount('#app')
 
 [Ananas UI 文档](https://zjxzjw.github.io/Ananas-UI/)
 
+## 演示
+
+![demo](./public/demo.png)
+
 ## 许可证
 
 [MIT](./LICENSE)
