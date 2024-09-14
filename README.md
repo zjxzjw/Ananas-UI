@@ -1,6 +1,7 @@
 <p align="center">
 <a href="https://github.com/zjxzjw/Ananas-UI">
-  <img src="./public/logo.svg" alt="Ananas UI是一个用于Vue3的轻量UI组件库" width="300">
+  <text style="font-size: 40px; font-weight: bold; color: #f1d270;">Ananas</text>
+  <text style="font-size: 40px; font-weight: bold; color: #95cf88">UI</text>
 </a>
 </p>
 
@@ -45,10 +46,6 @@ app.mount('#app')
 ## 文档
 
 [Ananas UI 文档](https://zjxzjw.github.io/Ananas-UI/)
-
-## 演示
-
-![demo](./public/demo.png)
 
 ## 许可证
 
