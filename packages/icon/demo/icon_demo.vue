@@ -8,13 +8,39 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import AnMessage from "../../message/index.js";
 // 点击box获取当前icon下面的div的内容
 const handleClick = (e: Event) => {
   const target = e.target as HTMLElement;
   // 放入系统剪切板
-  navigator.clipboard.writeText(target.innerText);
+  copyText(target.innerText);
 };
+
+function copyText(text: string) {
+  if (navigator.clipboard) {
+    copyText = (text) => {
+      navigator.clipboard.writeText(text);
+      AnMessage({
+        message: "复制成功!",
+        type: "success",
+      });
+    };
+  } else {
+    copyText = (text) => {
+      const input = document.createElement("input");
+      input.setAttribute("value", text);
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand("copy");
+      document.body.removeChild(input);
+      AnMessage({
+        message: "复制成功!",
+        type: "success",
+      });
+    };
+  }
+  copyText(text);
+}
 
 const data = ref([
   "minus-circle",
