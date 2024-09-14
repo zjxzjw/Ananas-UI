@@ -1,6 +1,6 @@
 {
   "name": "ananas-ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./dist/ananas-ui.umd.js",
   "module": "./dist/ananas-ui.js",
   "exports": {
@@ -11,8 +11,7 @@
     "./dist/style.css": "./dist/style.css"
   },
   "files": [
-    "dist/*",
-    "assets/logo.svg"
+    "dist/*"
   ],
   "private": false,
   "type": "module",
@@ -20,7 +19,9 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "prepub": "pnpm run build && cp ./assets/logo.svg ./dist/assets/logo.svg",
+    "pub": "npm publish --access public"
   },
   "dependencies": {
     "@fontsource/fira-mono": "^5.0.15",
