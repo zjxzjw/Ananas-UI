@@ -1,6 +1,6 @@
 {
   "name": "ananas-ui",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "main": "./dist/ananas-ui.umd.js",
   "module": "./dist/ananas-ui.js",
   "exports": {
