@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://github.com/zjxzjw/Ananas-UI">
-  <img src="/assets/logo.png" alt="Ananas UI是一个用于Vue3的轻量UI组件库" width="300">
+  <img src="./assets/logo.svg" alt="Ananas UI是一个用于Vue3的轻量UI组件库" width="300">
 </a>
 </p>
 
