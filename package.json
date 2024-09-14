@@ -20,7 +20,7 @@
     "build": "vite build",
     "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist",
-    "prepub": "pnpm run build && cp ./assets/logo.svg ./dist/assets/logo.svg",
+    "prepub": "pnpm run build",
     "pub": "npm publish --access public"
   },
   "dependencies": {
