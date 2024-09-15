@@ -32,6 +32,9 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
+      uuid:
+        specifier: ^10.0.0
+        version: 10.0.0
       vue:
         specifier: ^3.5.0
         version: 3.5.1(typescript@5.2.2)
@@ -907,6 +910,10 @@ packages:
     peerDependenciesMeta:
       webpack-sources:
         optional: true
+
+  uuid@10.0.0:
+    resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==}
+    hasBin: true
 
   vite-plugin-md@0.22.5:
     resolution: {integrity: sha512-ex6yQfan2teBT2uMzoIlDHRhKTOsNiyvblA9eLU/+uygpg4KikJPFeyBX300LqQ3pZ9qGHz35qoGJ0oLw47eZg==}
@@ -1903,6 +1910,8 @@ snapshots:
     dependencies:
       acorn: 8.12.1
       webpack-virtual-modules: 0.6.2
+
+  uuid@10.0.0: {}
 
   vite-plugin-md@0.22.5(@vitejs/plugin-vue@4.6.2(vite@4.5.3(@types/node@22.5.4)(sass@1.78.0))(vue@3.5.1(typescript@5.2.2)))(happy-dom@8.9.0)(sass@1.78.0)(vite@4.5.3(@types/node@22.5.4)(sass@1.78.0)):
     dependencies:

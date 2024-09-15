@@ -1,5 +1,5 @@
 ## Number Animation 数值动画
-<h5 style="color: #66d476">拥有你就拥有 全世界</h5>
+<h5 style="color: #66d476">在我们相遇之前，是否把时间拨快一点</h5>
 
 <script setup>
     import BasicDemo from "../demo/basic_demo.vue"

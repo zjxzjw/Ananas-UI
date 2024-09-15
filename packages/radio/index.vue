@@ -98,7 +98,7 @@ const change = (e, index) => {
         width: 4px;
         height: 4px;
         border-radius: 100%;
-        background-color: #fff;
+        //background-color: #fff;
         content: '';
         position: absolute;
         left: 50%;
@@ -123,7 +123,7 @@ const change = (e, index) => {
       background-color: #808080;
 
       &::after {
-        background-color: white;
+        //background-color: white;
       }
     }
   }
