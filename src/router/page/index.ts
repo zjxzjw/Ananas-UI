@@ -98,13 +98,18 @@ export default [
       },
       {
         path: '/numberAnimation',
-        name: 'NumberAnimation 数值动画',
+        name: 'Number Animation 数值动画',
         component: () => import('@packages/number_animation/doc/index.md')
       },
       {
         path: '/ellipsis',
         name: 'Ellipsis 文本省略',
         component: () => import('@packages/ellipsis/doc/index.md')
+      },
+      {
+        path: '/side_menu',
+        name: 'Side Menu 侧边菜单',
+        component: () => import('@packages/side_menu/doc/index.md')
       },
       {
         path: '/abc',

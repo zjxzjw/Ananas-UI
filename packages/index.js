@@ -13,6 +13,7 @@ import AnCard from './card/index.js'
 import AnIcon from './icon/index.js'
 import AnNumberAnimation from './number_animation/index.js'
 import AnEllipsis from './ellipsis/index.js'
+import AnSideMenu from './side_menu/index.js'
 
 const components = [
     AnButton,
@@ -28,7 +29,8 @@ const components = [
     AnCard,
     AnIcon,
     AnNumberAnimation,
-    AnEllipsis
+    AnEllipsis,
+    AnSideMenu
 ]
 
 const install = app => {
@@ -57,6 +59,7 @@ export {
     AnCard,
     AnIcon,
     AnNumberAnimation,
-    AnEllipsis
+    AnEllipsis,
+    AnSideMenu
 }
 export default AnanasUI

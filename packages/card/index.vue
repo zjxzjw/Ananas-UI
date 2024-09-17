@@ -24,7 +24,7 @@ import {computed} from 'vue';
 const props = defineProps({
   width: {
     type: String,
-    default: '100%'
+    default: '100'
   },
   height: {
     type: String,
@@ -39,7 +39,7 @@ const props = defineProps({
 const anCardClass = computed(() => {
   return {
     'an-card': true,
-    'an-card-hoverable': props.hoverable
+    'an-card-hover-able': props.hoverable
   }
 })
 </script>
@@ -78,7 +78,7 @@ const anCardClass = computed(() => {
   }
 }
 
-.an-card-hoverable {
+.an-card-hover-able {
   &:hover {
     border: 1px solid white;
     animation: shadow 0.8s forwards;
