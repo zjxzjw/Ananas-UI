@@ -3,6 +3,7 @@
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
+    import IconDemo from '../demo/icon_demo.vue'
     import DisabledDemo from '../demo/disabled_demo.vue'
     import RoundDemo from '../demo/round_demo.vue'
     import PasswordDemo from '../demo/password_demo.vue'
@@ -13,6 +14,11 @@
 ### 基本用法
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">输入框的基本用法</p>
 <BasicDemo />
+<Preview comp="input" demo="basic_demo" />
+
+### 图标用法
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">输入框的图标用法</p>
+<IconDemo />
 <Preview comp="input" demo="basic_demo" />
 
 ### 禁用状态
