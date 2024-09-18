@@ -4,6 +4,7 @@
 
 <script setup>
     import BasicDemo from "../demo/basic_demo.vue"
+    import InlineDemo from "../demo/inline_demo.vue"
     import Preview from '../../../src/components/preview.vue'
 </script>
 
@@ -12,3 +13,9 @@
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">可以选择多个！</p>
 <BasicDemo />
 <Preview comp="checkbox" demo="basic_demo" />
+
+### 排列方式
+
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">竖着放好像也不错</p>
+<InlineDemo />
+<Preview comp="checkbox" demo="inline_demo" />

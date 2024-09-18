@@ -1,6 +1,6 @@
 <template>
-    <an-checkbox v-model="selectedHobbies" :options="hobbies" />
-    <p>您选择的兴趣爱好有: {{ selectedHobbies }}</p>
+  <an-checkbox v-model="selectedHobbies" :options="hobbies" :inline="false" />
+  <p>您选择的兴趣爱好有: {{ selectedHobbies }}</p>
 </template>
 
 <script setup>

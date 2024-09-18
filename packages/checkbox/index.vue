@@ -1,121 +1,142 @@
 <template>
-  <div class="checkbox-group" :class="{ 'is-checked': localValue }">
-    <input
-        style="display: none"
-        type="checkbox"
-        :id="option.id"
-        :value="option.value"
-        v-model="localValue"
-        @change="handleChange"
-    >
-    <label :for="option.id" class="custom-checkbox">
-      <span class="checkbox-indicator"></span>
-      {{ option.label }}
-    </label>
+  <div class="an-checkbox">
+    <div class="an-checkbox-item" v-for="(item, index) in options" :key="index" @click="toggle(item, index)"
+         :class="{ 'an-checkbox-item-disabled': item.disabled }">
+      <span :class="{ active: isChecked(item) }"></span>
+      {{ item[filedLabel] }}
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AnCheckbox',
-  props: {
-    value: {
-      type: Array,
-      default: () => []
-    },
-    option: {
-      type: Object,
-      required: true
-    }
-  },
-  data() {
-    return {
-      localValue: false // 初始化本地状态
-    };
-  },
-  watch: {
-    // 监听父组件传递的 value 变化
-    value(newVal) {
-      this.localValue = newVal.includes(this.option.value);
-    }
-  },
-  created() {
-    // 初始设置本地状态
-    this.localValue = this.value.includes(this.option.value);
-  },
-  methods: {
-    handleChange(event) {
-      const newValue = event.target.checked;
-      if (newValue) {
-        // 当多选框被选中时，将当前值加入到父组件的 value 中
-        this.$emit('input', [...this.value, this.option.value]);
-      } else {
-        // 当多选框被取消选中时，从父组件的 value 中移除当前值
-        this.$emit('input', this.value.filter(val => val !== this.option.value));
-      }
-    }
-  }
+  name: "AnCheckbox"
 }
 </script>
 
-<style scoped>
-.checkbox-group {
+<script setup>
+import { ref, computed, watch } from 'vue'
+
+const emit = defineEmits(['change'])
+
+const props = defineProps({
+  options: {
+    type: Array,
+    default: () => []
+  },
+  inline: {
+    type: Boolean,
+    default: true
+  },
+  filedLabel: {
+    type: String,
+    default: 'label'
+  },
+  filedValue: {
+    type: String,
+    default: 'value'
+  },
+  customColor: {
+    type: String,
+    default: '#ffcf3f'
+  },
+  modelValue: {
+    type: Array,
+    default: () => []
+  }
+})
+
+const selectedValues = ref(props.modelValue)
+
+// 当外部传入的值发生变化时，同步内部状态
+watch(() => props.modelValue, (newValue) => {
+  selectedValues.value = newValue
+}, { deep: true })
+
+// 检查给定项是否已被选中
+const isChecked = (item) => {
+  return selectedValues.value.includes(item[props.filedValue])
+}
+
+// 切换选中状态
+const toggle = (item, index) => {
+  if (!item.disabled) {
+    const value = item[props.filedValue]
+    let newSelectedValues
+
+    if (selectedValues.value.includes(value)) {
+      // 如果已经选中，则移除
+      newSelectedValues = selectedValues.value.filter(v => v !== value)
+    } else {
+      // 否则添加到选中的列表
+      newSelectedValues = [...selectedValues.value, value]
+    }
+
+    selectedValues.value = newSelectedValues
+    emit('update:modelValue', newSelectedValues)
+    emit('change', newSelectedValues, item)
+  }
+}
+
+const isInline = ref('inline-flex')
+
+props.inline ? isInline.value = 'inline-flex' : isInline.value = 'flex'
+</script>
+
+<style lang="scss" scoped>
+.an-checkbox {
   display: inline-block;
-  margin-right: 1em;
-}
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 
-.custom-checkbox {
-  position: relative;
-  cursor: pointer;
-}
+  .an-checkbox-item {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    display: v-bind(isInline);
+    align-items: center;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 15px;
+    user-select: none;
 
-.custom-checkbox .checkbox-indicator {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #ccc;
-  position: relative;
-  vertical-align: middle;
-  margin-right: 5px;
-  border-radius: 0.3em;
-}
+    span {
+      width: 14px;
+      height: 14px;
+      overflow: hidden;
+      display: inline-block;
+      line-height: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-right: 10px;
+      user-select: none;
+      position: relative;
+      border: 1px solid #e0dede;
+      border-radius: 4px;
+      background-color: #e0dede;
+      transition: transform .15s ease-in;
+    }
 
-.custom-checkbox input[type=checkbox] {
-  visibility: hidden;
-  position: absolute;
-  z-index: -1;
-}
+    span.active {
+      background-color: v-bind(customColor);
+      border: 1px solid v-bind(customColor);
 
-.checkbox-group.is-checked .custom-checkbox .checkbox-indicator {
-  background-color: #ffcf3f; /* 修改背景颜色 */
-  border-color: #ffcf3f; /* 修改边框颜色 */
-}
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
 
-.checkbox-group.is-checked .custom-checkbox .checkbox-indicator::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 0.2s;
-  background: #ffcf3f;
-  height: 6px;
-  width: 3px;
-  margin-top: -3px;
-  margin-left: -2px;
-}
+  .an-checkbox-item-disabled {
+    cursor: no-drop;
+    color: #808080;
 
-.custom-checkbox .checkbox-indicator::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 0.2s;
-  background: #ffcf3f;
-  height: 6px;
-  width: 3px;
-  margin-top: -3px;
-  margin-left: -2px;
+    span {
+      border: 1px solid #808080;
+      background-color: #808080;
+    }
+  }
 }
 </style>
