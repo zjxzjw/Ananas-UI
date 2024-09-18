@@ -1,74 +1,79 @@
 <template>
   <button :class="button_class" :disabled="disabled">
-    <slot></slot>
+    <div v-if="$slots.icon" class="button_icon">
+      <slot name="icon"></slot>
+    </div>
+    <div class="button_text">
+      <slot></slot>
+    </div>
   </button>
 </template>
 
 <script>
-import {computed} from 'vue'
+import { computed } from "vue";
 
 export default {
-  name: "AnButton"
-}
+  name: "AnButton",
+};
 </script>
 
 <script setup>
 const props = defineProps({
   type: {
     type: String,
-    default: 'default',
+    default: "default",
   },
   round: {
     type: Boolean,
     default: false,
   },
   disabled: {
-    type: Boolean
+    type: Boolean,
   },
   secondary: {
-    type: Boolean
+    type: Boolean,
   },
   size: {
     type: String,
-    default: 'default'
+    default: "default",
   },
   background: {
-    type: String
+    type: String,
   },
   textColor: {
-    type: String
+    type: String,
   },
   transform: {
     type: String,
-    default: ''
-  }
-})
+    default: "",
+  },
+});
 
 const button_class = computed(() => {
   return [
-    'an-button',
+    "an-button",
     `an-button-${props.type}`,
     `an-button-size-${props.size}`,
-    props.round ? 'an-button-round' : '',
-    props.disabled ? 'an-button-disabled' : '',
-    props.secondary ? `an-button-${props.type}-secondary` : '',
-    props.background ? `an-button-background` : '',
-    props.textColor ? `an-button-text-color` : ''
-  ]
-})
+    props.round ? "an-button-round" : "",
+    props.disabled ? "an-button-disabled" : "",
+    props.secondary ? `an-button-${props.type}-secondary` : "",
+    props.background ? `an-button-background` : "",
+    props.textColor ? `an-button-text-color` : "",
+  ];
+});
 </script>
 
 <style scoped lang="scss">
 /* 按钮 */
 .an-button {
-  width: 5rem;
-  //margin-right: 0.7rem;
-  display: inline-block;
+  width: 8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.3rem;
   padding: 0 4px;
   font-size: 0.75rem;
   height: 32px;
-  line-height: 1;
   box-sizing: border-box;
   color: #2235468c;
   cursor: pointer;
@@ -162,21 +167,21 @@ const button_class = computed(() => {
 }
 
 .an-button-size-default {
-  width: 5rem;
+  width: 8rem;
   height: 32px;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .an-button-size-small {
-  width: 4rem;
+  width: 6rem;
   height: 24px;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
 }
 
 .an-button-size-large {
-  width: 6rem;
+  width: 12rem;
   height: 40px;
-  font-size: 0.9rem;
+  font-size: 1.25rem;
 }
 
 /* 按钮背景颜色 */

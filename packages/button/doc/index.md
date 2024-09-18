@@ -3,7 +3,8 @@
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
-    import DilsabledDemo from '../demo/disabled_demo.vue'
+    import DisabledDemo from '../demo/disabled_demo.vue'
+    import IconDemo from '../demo/icon_demo.vue'
     import RoundDemo from '../demo/round_demo.vue'
     import SecondaryDemo from '../demo/secondary_demo.vue'
     import SizeDemo from '../demo/size_demo.vue'
@@ -34,8 +35,13 @@
 
 ### 禁用状态
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">不许点！</p>
-<DilsabledDemo />
+<DisabledDemo />
 <Preview comp="button" demo="disabled_demo"/>
+
+### 图标按钮
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">图标按钮</p>
+<IconDemo />
+<Preview comp="button" demo="icon_demo"/>
 
 ### 圆角按钮
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">圆圆的也很可爱~</p>
