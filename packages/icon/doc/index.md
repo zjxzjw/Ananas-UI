@@ -3,6 +3,7 @@
 
 <script setup>
 import BasicDemo from '../demo/basic_demo.vue'
+import ColorDemo from '../demo/color_demo.vue'
 import IconDemo from '../demo/icon_demo.vue'
 import Preview from '../../../src/components/preview.vue'
 </script>
@@ -11,6 +12,11 @@ import Preview from '../../../src/components/preview.vue'
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">图标的基本用法~</p>
 <BasicDemo />
 <Preview comp="icon" demo="basic_demo" />
+
+### 图标颜色
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">图标颜色~</p>
+<ColorDemo />
+<Preview comp="icon" demo="color_demo" />
 
 ### 图标库
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">已支持200+图标，持续更新中~</p>

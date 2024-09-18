@@ -7,7 +7,7 @@
       ><template #icon> <an-icon name="check" color="#fff" /> </template> Success
     </an-button>
     <an-button type="error"
-      ><template #icon> <an-icon name="close-circle" /> </template> Error
+      ><template #icon> <an-icon name="close-circle" color="#fff" /> </template> Error
     </an-button>
   </an-space>
 </template>
