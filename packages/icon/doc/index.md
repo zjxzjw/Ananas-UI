@@ -13,8 +13,8 @@ import Preview from '../../../src/components/preview.vue'
 <BasicDemo />
 <Preview comp="icon" demo="basic_demo" />
 
-### 图标颜色
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">图标颜色~</p>
+### 自定义颜色
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">换个颜色看看~</p>
 <ColorDemo />
 <Preview comp="icon" demo="color_demo" />
 
@@ -54,6 +54,12 @@ import Preview from '../../../src/components/preview.vue'
                 type: 'String',
                 default: '1em',
                 explain: '图标尺寸'
+            },
+            {
+                name: 'color',
+                type: 'String',
+                default: 'null',
+                explain: '颜色'
             }
         ]
   }

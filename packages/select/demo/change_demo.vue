@@ -3,6 +3,7 @@
 </template>
 
 <script setup>
+import AnMessage from '../../../packages/message/index.js'
 import {reactive} from 'vue'
 
 const state = reactive({
@@ -25,6 +26,9 @@ const state = reactive({
 const {options} = state
 
 const change = (val) => {
-  alert(val.label)
+  AnMessage({
+    message: '这是一条消息提示',
+    type: 'primary'
+  })
 }
 </script>

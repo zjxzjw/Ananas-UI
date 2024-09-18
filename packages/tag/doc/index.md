@@ -31,15 +31,15 @@
 <ScaleDemo />
 <Preview comp="tag" demo="scale_demo"/>
 
-### 自定义颜色
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">红，橙，黄，绿，青，蓝，紫的彩虹</p>
-<ColorDemo />
-<Preview comp="tag" demo="color_demo"/>
-
 ### 尺寸
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有好多尺寸的标签</p>
 <SizeDemo />
 <Preview comp="tag" demo="size_demo"/>
+
+### 自定义颜色
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">红，橙，黄，绿，青，蓝，紫的彩虹</p>
+<ColorDemo />
+<Preview comp="tag" demo="color_demo"/>
 
 <!-- API表格 -->
 ### API
