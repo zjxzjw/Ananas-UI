@@ -49,6 +49,7 @@ const switchMenu = (item, index) => {
   width: 25rem;
   background-color: #f9f9f9;
   overflow-y: auto;
+  height: calc(100vh - 60px);
 }
 
 li {

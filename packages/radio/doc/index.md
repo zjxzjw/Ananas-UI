@@ -69,13 +69,13 @@
                 explain: '排列方式属性'
             },
             {
-                name: 'filedLabel',
+                name: 'filed-label',
                 type: 'String',
                 default: 'label',
                 explain: '选项属性名'
             },
             {
-                name: 'filedValue',
+                name: 'filed-value',
                 type: 'String',
                 default: 'value',
                 explain: '选项数据名'

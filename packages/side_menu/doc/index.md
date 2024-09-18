@@ -3,7 +3,7 @@
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
-import Preview from '../../../src/components/preview.vue'
+    import Preview from '../../../src/components/preview.vue'
 </script>
 
 ### 基本用法

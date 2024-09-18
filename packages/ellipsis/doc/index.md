@@ -45,19 +45,19 @@
         ],
         item: [
             {
-                name: 'fullText',
+                name: 'full-text',
                 type: 'String',
                 default: 'null',
                 explain: '内容'
             },
             {
-                name: 'maxLength',
+                name: 'max-length',
                 type: 'Number',
                 default: '30',
                 explain: '文本长度'
             },
 			{
-				name: 'showFullText',
+				name: 'show-full-text',
 				type: 'Boolean',
 				default: 'false | true',
 				explain: '是否显示'

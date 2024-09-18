@@ -81,13 +81,13 @@
                 explain: '是否禁用'
             },
             {
-                name: 'filedLabel',
+                name: 'filed-label',
                 type: 'String',
                 default: 'label',
                 explain: '选项名称'
             },
             {
-                name: 'filedValue',
+                name: 'filed-value',    
                 type: 'String',
                 default: 'value',
                 explain: '数据名称'

@@ -19,7 +19,7 @@
 ### 图标用法
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">输入框的图标用法</p>
 <IconDemo />
-<Preview comp="input" demo="icon_demo" />
+<Preview comp="input" demo="basic_demo" />
 
 ### 禁用状态
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">输入框输入可以禁用</p>

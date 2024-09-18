@@ -23,6 +23,11 @@
 <SecondaryDemo />
 <Preview comp="button" demo="secondary_demo"/>
 
+### 图标按钮
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">不好看！</p>
+<IconDemo />
+<Preview comp="button" demo="icon_demo"/>
+
 ### 尺寸
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有default、small、large三种尺寸</p>
 <SizeDemo />

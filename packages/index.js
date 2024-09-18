@@ -14,6 +14,8 @@ import AnIcon from './icon/index.js'
 import AnNumberAnimation from './number_animation/index.js'
 import AnEllipsis from './ellipsis/index.js'
 import AnSideMenu from './side_menu/index.js'
+import AnImage from './image/index.js'
+import AnCheckbox from './checkbox/index.js'
 
 const components = [
     AnButton,
@@ -30,7 +32,9 @@ const components = [
     AnIcon,
     AnNumberAnimation,
     AnEllipsis,
-    AnSideMenu
+    AnSideMenu,
+    AnImage,
+    AnCheckbox
 ]
 
 const install = app => {
@@ -60,6 +64,8 @@ export {
     AnIcon,
     AnNumberAnimation,
     AnEllipsis,
-    AnSideMenu
+    AnSideMenu,
+    AnImage,
+    AnCheckbox
 }
 export default AnanasUI

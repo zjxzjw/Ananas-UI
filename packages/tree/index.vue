@@ -1,18 +1,18 @@
 <template>
-  <div class="an-side-menu-box">
+  <div class="an-tree-box">
     <li
-      v-for="(item, index) in newOptions"
-      :key="index"
-      @click.stop="isOpen(item)"
-      :class="anSideMenuClass"
+        v-for="(item, index) in newOptions"
+        :key="index"
+        @click.stop="isOpen(item)"
+        :class="anTreeClass"
     >
       <span>{{ item.label }}</span>
       <transition name="slide-fade">
         <ul v-show="item.isOpened" v-if="item.children && item.children.length">
-          <an-side-menu
-            :options="item.children"
-            :noneHeader="noneHeader"
-            :numberColor="numberColor"
+          <an-tree
+              :options="item.children"
+              :noneHeader="noneHeader"
+              :numberColor="numberColor"
           />
         </ul>
       </transition>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "Anside-menu",
+  name: "AnTree",
 };
 </script>
 
@@ -56,11 +56,11 @@ const isOpen = (item) => {
   item.isOpened = !item.isOpened;
 };
 
-const anSideMenuClass = computed(() => {
+const anTreeClass = computed(() => {
   return {
-    "an-side-menu": true,
-    "an-side-menu-head": props.noneHeader,
-    "an-side-menu-box": props.height,
+    "an-tree": true,
+    "an-tree-head": props.noneHeader,
+    "an-tree-box": props.height,
   };
 });
 </script>
@@ -80,7 +80,7 @@ const anSideMenuClass = computed(() => {
   opacity: 0;
 }
 
-.an-side-menu {
+.an-tree {
   color: v-bind(numberColor);
 
   span {
@@ -88,11 +88,11 @@ const anSideMenuClass = computed(() => {
   }
 }
 
-.an-side-menu-head {
+.an-tree-head {
   list-style: none;
 }
 
-.an-side-menu-box {
+.an-tree-box {
   height: v-bind(height);
 }
 </style>
