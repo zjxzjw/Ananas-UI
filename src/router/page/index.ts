@@ -82,6 +82,11 @@ export default [
                 component: () => import('@packages/message/doc/index.md')
             },
             {
+                path: '/model',
+                name: 'Model 模型框',
+                component: () => import('@packages/model/doc/index.md')
+            },
+            {
                 path: '/numberAnimation',
                 name: 'Number Animation 数值动画',
                 component: () => import('@packages/number_animation/doc/index.md')

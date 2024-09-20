@@ -64,16 +64,16 @@ onMounted(() => {
 }
 
 .show-code {
-  background-color: #ededed;
-  width: 10%;
+  background-color: #ffffff;
+  width: 5%;
   text-align: center;
   cursor: pointer;
   font-size: 0.8rem;
-  color: black;
+  color: var(--color-text);
   border-radius: 0.2rem;
   line-height: 1.5rem;
   height: 1.5rem;
-  margin: 1rem 1rem;
+  margin: 1rem 1rem 1rem 0rem;
   transition: box-shadow 0.5s, color 0.5s;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 

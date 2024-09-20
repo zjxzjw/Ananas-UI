@@ -17,6 +17,7 @@ import AnSideMenu from './side_menu/index.js'
 import AnImage from './image/index.js'
 import AnCheckbox from './checkbox/index.js'
 import AnChart from './chart/index.js'
+import AnModel from './model/index.js'
 
 const components = [
     AnButton,
@@ -36,7 +37,8 @@ const components = [
     AnSideMenu,
     AnImage,
     AnCheckbox,
-    AnChart
+    AnChart,
+    AnModel
 ]
 
 const install = app => {
@@ -69,6 +71,7 @@ export {
     AnSideMenu,
     AnImage,
     AnCheckbox,
-    AnChart
+    AnChart,
+    AnModel
 }
 export default AnanasUI
