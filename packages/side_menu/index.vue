@@ -31,7 +31,8 @@ export default {
 import {useRouter} from "vue-router"
 
 const props = defineProps({
-  menuItems: Array
+  menuItems: Array,
+  default: []
 })
 
 const router = useRouter()
@@ -69,8 +70,7 @@ const navigateTo = (item) => {
 };
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
 .menu-item {
   position: relative;
   list-style: none;
@@ -80,7 +80,7 @@ const navigateTo = (item) => {
 
 .menu-link {
   display: block;
-  padding: 10px;
+  padding: 10px 20px;
   text-decoration: none;
   color: #333;
 }

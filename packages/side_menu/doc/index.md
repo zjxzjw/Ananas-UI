@@ -10,3 +10,36 @@
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">城市的霓虹灯太闪亮~</p>
 <BasicDemo />
 <Preview comp="side_menu" demo="basic_demo" />
+
+<!-- API表格 -->
+### API
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">好多属性，我好喜欢~</p>
+<script setup>
+    import ApiTable from '../../../src/components/api_table.vue'
+    const data = {
+        columns: [
+            {
+                title: '名称'
+            },
+            {
+                title: '类型'
+            },
+            {
+                title: '默认值'
+            },
+            {
+                title: '说明'
+            }
+        ],
+        item: [
+            {
+                name: 'menu-items',
+                type: 'Array',
+                default: '[]',
+                explain: '菜单数据'
+            }
+        ]
+  }
+</script>
+<ApiTable :data="data" />
+

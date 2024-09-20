@@ -16,6 +16,7 @@ import AnEllipsis from './ellipsis/index.js'
 import AnSideMenu from './side_menu/index.js'
 import AnImage from './image/index.js'
 import AnCheckbox from './checkbox/index.js'
+import AnChart from './chart/index.js'
 
 const components = [
     AnButton,
@@ -34,7 +35,8 @@ const components = [
     AnEllipsis,
     AnSideMenu,
     AnImage,
-    AnCheckbox
+    AnCheckbox,
+    AnChart
 ]
 
 const install = app => {
@@ -66,6 +68,7 @@ export {
     AnEllipsis,
     AnSideMenu,
     AnImage,
-    AnCheckbox
+    AnCheckbox,
+    AnChart
 }
 export default AnanasUI

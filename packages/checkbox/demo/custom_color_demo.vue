@@ -1,5 +1,5 @@
 <template>
-  <an-checkbox v-model="selectedHobbies" :options="hobbies" :inline="false" />
+  <an-checkbox v-model="selectedHobbies" :options="hobbies" custom-color="#66d476"/>
   <p>您选择的兴趣爱好有: {{ selectedHobbies }}</p>
 </template>
 

@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <div :class="showCode">
-      <highlightjs :code="code" language="JavaScript" />
-    </div>
+  <div class="code-box">
     <div
-      class="show-code"
-      @click="
+        class="show-code"
+        @click="
         showCode = showCode === 'container-show' ? 'container-hide' : 'container-show'
       "
     >
       {{ showText }}
+    </div>
+    <div :class="showCode">
+      <highlightjs :code="code" language="JavaScript" />
     </div>
   </div>
 </template>
@@ -44,6 +44,12 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
+.code-box{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
 .container-show {
   margin-top: 1rem;
   width: 100%;
@@ -58,7 +64,8 @@ onMounted(() => {
 }
 
 .show-code {
-  width: 90%;
+  background-color: #ededed;
+  width: 10%;
   text-align: center;
   cursor: pointer;
   font-size: 0.8rem;
@@ -66,12 +73,14 @@ onMounted(() => {
   border-radius: 0.2rem;
   line-height: 1.5rem;
   height: 1.5rem;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
   transition: box-shadow 0.5s, color 0.5s;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 
   &:hover {
-    //box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.08);
     color: #66d476;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+
   }
 }
 

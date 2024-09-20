@@ -9,7 +9,7 @@
       <router-link to="/fast" class="nav-item">文档</router-link>
       <a class="nav-item" @click="toGitEE"> Gitee </a>
       <a class="nav-item" @click="toGitHub"> Github </a>
-      <router-link to="/" class="nav-item">0.0.3</router-link>
+      <router-link to="/" class="nav-item">0.1.5</router-link>
     </div>
   </div>
 </template>
