@@ -59,8 +59,8 @@
 <Preview comp="button" demo="custom_color_demo"/>
 
 <!-- API表格 -->
-### API
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有好多尺寸的标签</p>
+### API 属性
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">关于怎么控制按钮，看看这</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

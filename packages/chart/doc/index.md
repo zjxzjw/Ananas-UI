@@ -28,7 +28,7 @@
 
 <!-- API表格 -->
 ### API
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">图表的属性</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">具体属性可参考Echarts官网~</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

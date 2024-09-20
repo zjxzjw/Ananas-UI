@@ -42,8 +42,8 @@
 <Preview comp="breadcrumb" demo="text_color_demo" />
 
 <!-- API表格 -->
-### API
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有好多尺寸的标签</p>
+### API 属性
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">还是没想通这东西和名称为什么不搭架</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

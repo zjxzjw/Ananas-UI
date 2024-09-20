@@ -68,7 +68,7 @@ onMounted(() => {
   width: 5%;
   text-align: center;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: var(--color-text);
   border-radius: 0.2rem;
   line-height: 1.5rem;
