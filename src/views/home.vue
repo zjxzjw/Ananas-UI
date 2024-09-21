@@ -29,10 +29,11 @@ import NavBar from "@/components/nav_bar.vue";
 
 const router = useRouter();
 
-const activeIndex = ref(0);
+const activeIndex = ref(localStorage.getItem("currentMenu") || 0);
 
 const switchMenu = (item, index) => {
   activeIndex.value = index;
+  localStorage.setItem("currentMenu", JSON.stringify(index));
   router.push({ name: item.name });
 };
 </script>
