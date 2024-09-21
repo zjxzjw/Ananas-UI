@@ -1,4 +1,5 @@
 ## Breadcrumb 面包屑
+
 <h5 style="color: #66d476">在爱情没被定义为爱情的那几年</h5>
 
 <script setup>
@@ -12,38 +13,46 @@
 </script>
 
 ### 基本用法
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">这东西长得和它名字不怎么像</p>
 <BasicDemo />
 <Preview comp="breadcrumb" demo="basic_demo" />
 
 ### 标签类型
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">带框框的面包屑导航</p>
 <CustomDemo />
 <Preview comp="breadcrumb" demo="custom_demo" />
 
 ### 自定义分隔符
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">可以独特！</p>
 <CustomSeparatorDemo />
 <Preview comp="breadcrumb" demo="custom_separator_demo" />
 
 ### 间距
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">通过margin属性控制距离</p>
 <MarginDemo />
 <Preview comp="breadcrumb" demo="margin_demo" />
 
 ### 分隔符颜色
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">定制个性的颜色！</p>
 <SeparatorColorDemo />
 <Preview comp="breadcrumb" demo="separator_color_demo" />
 
 ### 文字颜色
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">定制个性的颜色！</p>
 <TextColorDemo />
 <Preview comp="breadcrumb" demo="text_color_demo" />
 
 <!-- API表格 -->
+
 ### API 属性
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">还是没想通这东西和名称为什么不搭架</p>
+
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">还是没想通这东西和名称为什么不搭架</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

@@ -3,5 +3,7 @@
 </template>
 
 <script setup>
-  const fullText = "微风需要竹林，溪流需要蜻蜓；乡愁般的离开，需要片片浮萍；记得那年的雨季，回忆里特安静"
+  const fullText = "爱你穿越时间，两行来自秋末的眼泪，让爱渗透了地面，我要的只是你在我身边，再爱我一遍"
 </script>
+
+

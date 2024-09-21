@@ -1,4 +1,5 @@
 ## Textarea 文本域
+
 <h5 style="color: #66d476">只有找到属于自己的世界，人生才有意义</h5>
 
 <script setup>
@@ -12,38 +13,46 @@
 </script>
 
 ### 基本用法
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">文本域的基本用法</p>
 <BasicDemo />
 <Preview comp="textarea" demo="basic_demo"/>
 
 ### 禁用状态
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">不可用的状态</p>
 <DisabledDemo comp="textarea" demo="disabled_demo"/>
 <Preview comp="textarea" demo="disabled_demo"/>
 
 ### 字数限制
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">不可以输入那么多～</p>
 <MaxLengthDemo />
 <Preview comp="textarea" demo="max_length_demo"/>
 
 ### 只读状态
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">给你看看就好</p>
 <ReadonlyDemo />
 <Preview comp="textarea" demo="readonly_demo"/>
 
 ### 改变尺寸
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">可调节的尺寸</p>
 <ResizeDemo />
 <Preview comp="textarea" demo="resize_demo"/>
 
 ### 固定尺寸
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">可调节的尺寸</p>
 <SizeDemo />
 <Preview comp="textarea" demo="size_demo" />
 
 <!-- API表格 -->
-### API
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有好多尺寸的标签</p>
+
+### API 属性
+
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">可以输入比文本框更多的内容</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

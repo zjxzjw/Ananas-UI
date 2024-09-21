@@ -29,9 +29,9 @@
 
 <!-- API表格 -->
 
-### API
+### API 属性
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有好多尺寸的标签</p>
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">太三心二意了可不好~</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

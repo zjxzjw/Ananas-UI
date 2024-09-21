@@ -32,14 +32,14 @@ export default [
                 component: () => import('@packages/fast/doc/index.md')
             },
             {
-                path: '/button',
-                name: 'Button 按钮',
-                component: () => import('@packages/button/doc/index.md')
-            },
-            {
                 path: '/breadcrumb',
                 name: 'Breadcrumb 面包屑',
                 component: () => import('@packages/breadcrumb/doc/index.md')
+            },
+            {
+                path: '/button',
+                name: 'Button 按钮',
+                component: () => import('@packages/button/doc/index.md')
             },
             {
                 path: '/card',
@@ -47,14 +47,14 @@ export default [
                 component: () => import('@packages/card/doc/index.md')
             },
             {
-                path: '/checkbox',
-                name: 'Checkbox 多选',
-                component: () => import('@packages/checkbox/doc/index.md')
-            },
-            {
                 path: '/chart',
                 name: 'Chart 图表',
                 component: () => import('@packages/chart/doc/index.md')
+            },
+            {
+                path: '/checkbox',
+                name: 'Checkbox 多选',
+                component: () => import('@packages/checkbox/doc/index.md')
             },
             {
                 path: '/ellipsis',
@@ -67,14 +67,14 @@ export default [
                 component: () => import('@packages/icon/doc/index.md')
             },
             {
-                path: '/input',
-                name: 'Input 输入框',
-                component: () => import('@packages/input/doc/index.md')
-            },
-            {
                 path: '/image',
                 name: 'Image 图片',
                 component: () => import('@packages/image/doc/index.md')
+            },
+            {
+                path: '/input',
+                name: 'Input 输入框',
+                component: () => import('@packages/input/doc/index.md')
             },
             {
                 path: '/message',
@@ -97,19 +97,24 @@ export default [
                 component: () => import('@packages/radio/doc/index.md')
             },
             {
-                path: '/side_menu',
-                name: 'Side Menu 侧边菜单',
-                component: () => import('@packages/side_menu/doc/index.md')
-            },
-            {
                 path: '/select',
                 name: 'Select 选择器',
                 component: () => import('@packages/select/doc/index.md')
             },
             {
+                path: '/side_menu',
+                name: 'Side Menu 侧边菜单',
+                component: () => import('@packages/side_menu/doc/index.md')
+            },
+            {
                 path: '/space',
                 name: 'Space 间距',
                 component: () => import('@packages/space/doc/index.md')
+            },
+            {
+                path: '/table',
+                name: 'Table 表格',
+                component: () => import('@packages/table/doc/index.md')
             },
             {
                 path: '/tag',
@@ -125,11 +130,6 @@ export default [
                 path: '/tree',
                 name: 'Tree 树',
                 component: () => import('@packages/tree/doc/index.md')
-            },
-            {
-                path: '/table',
-                name: 'Table 表格',
-                component: () => import('@packages/table/doc/index.md')
             },
             {
                 path: '/abc',

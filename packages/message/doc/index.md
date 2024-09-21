@@ -1,5 +1,5 @@
 ## Message 消息
-<h5 style="color: #66d476">不是女神发的消息</h5>
+<h5 style="color: #66d476">不是女神发的消息！！！</h5>
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
@@ -24,8 +24,8 @@
 <Preview comp="message" demo="time_demo"/>
 
 <!-- API表格 -->
-### API
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有好多尺寸的标签</p>
+### API 属性
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">你忍住不回消息以为是你赢了，可能别人根本不在乎！</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

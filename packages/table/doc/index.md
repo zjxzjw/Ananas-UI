@@ -1,4 +1,5 @@
 ## Table 表格
+
 <h5 style="color: #66d476">令人头大的Excel</h5>
 
 <script setup>
@@ -12,38 +13,46 @@
 </script>
 
 ### 基本用法
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">一个基本的表格</p>
 <BasicDemo />
 <Preview comp="table" demo="basic_demo"/>
 
 ### 带边框表格
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有边框的表格</p>
 <BorderDemo />
 <Preview comp="table" demo="border_demo"/>
 
 ### 自定义插槽
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">可以用来放一些操作按钮</p>
 <CustomDemo />
 <Preview comp="table" demo="custom_demo"/>
 
 ### 自定义尺寸
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">金箍棒，大 大 大 大</p>
 <SizeDemo />
 <Preview comp="table" demo="size_demo"/>
 
 ### 自定义内容位置
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">可以选择内容位置</p>
 <ItemAlignDemo />
 <Preview comp="table" demo="item_align_demo"/>
 
 ### 自定义标题栏
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">换一个颜色看看</p>
 <CustomTitleDemo />
 <Preview comp="table" demo="custom_title_demo"/>
 
 <!-- API表格 -->
-### API
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有好多尺寸的标签</p>
+
+### API 属性
+
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">脑袋要爆炸！！！</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

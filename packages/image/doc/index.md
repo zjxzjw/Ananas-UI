@@ -1,6 +1,6 @@
 ## Image 图片
 
-<h5 style="color: #66d476">你站的方位，和我中间隔着泪</h5>
+<h5 style="color: #66d476">手牵手一步两步三步四步望着天</h5>
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
@@ -36,9 +36,9 @@
 
 <!-- API表格 -->
 
-### API
+### API 属性
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有好多尺寸的标签</p>
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">看星星一颗两颗三颗四颗连成线~</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

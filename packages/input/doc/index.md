@@ -1,4 +1,5 @@
 ## Input 输入框
+
 <h5 style="color: #66d476">人最重要的是找到属于自己的世界</h5>
 
 <script setup>
@@ -12,38 +13,46 @@
 </script>
 
 ### 基本用法
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">输入框的基本用法</p>
 <BasicDemo />
 <Preview comp="input" demo="basic_demo" />
 
 ### 图标用法
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">输入框的图标用法</p>
 <IconDemo />
 <Preview comp="input" demo="icon_demo" />
 
 ### 禁用状态
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">输入框输入可以禁用</p>
 <DisabledDemo />
 <Preview comp="input" demo="disabled_demo" />
 
 ### 尺寸
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">可以选择四种尺寸的输入框</p>
 <SizeDemo />
 <Preview comp="input" demo="size_demo" />
 
 ### 圆角
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">看起来也不错</p>
 <RoundDemo />
 <Preview comp="input" demo="round_demo" />
 
 ### 输入密码
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">一定要偷偷的</p>
 <PasswordDemo />
 <Preview comp="input" demo="password_demo" />
 
 <!-- API表格 -->
-### API
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有好多尺寸的标签</p>
+
+### API 属性
+
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">太多了就要溢出来了！</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

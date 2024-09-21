@@ -59,9 +59,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.typewriter {
-  /* 可以添加一些样式 */
-}
-</style>

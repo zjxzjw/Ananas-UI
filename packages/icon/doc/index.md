@@ -23,8 +23,8 @@ import Preview from '../../../src/components/preview.vue'
 <IconDemo />
 
 <!-- API表格 -->
-### API
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">图标相关的属性~</p>
+### API 属性
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">图标相关的属性~</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

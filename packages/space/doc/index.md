@@ -1,4 +1,5 @@
 ## Space 间距
+
 <h5 style="color: #66d476">你站的方位，跟我中间隔着泪</h5>
 
 <script setup>
@@ -9,23 +10,28 @@
 </script>
 
 ### 基本用法
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">基本间距！</p>
 <BasicDemo />
 <Preview comp="space" demo="basic_demo"/>
 
 ### 排列
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">也可以竖着的！</p>
 <ArrayDemo />
 <Preview comp="space" demo="array_demo"/>
 
 ### 尺寸
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">别离我太远</p>
 <SizeDemo />
 <Preview comp="space" demo="size_demo"/>
 
 <!-- API表格 -->
-### API
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有好多尺寸的标签</p>
+
+### API 属性
+
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">排列组合</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

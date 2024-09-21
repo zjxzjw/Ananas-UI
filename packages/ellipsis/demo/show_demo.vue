@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-  const fullText = "青春属于表白，阳光属于窗台；而我想我属于一个拥有你的未来"
+const fullText = "爱你穿越时间，两行来自秋末的眼泪，让爱渗透了地面，我要的只是你在我身边，再爱我一遍"
 </script>
