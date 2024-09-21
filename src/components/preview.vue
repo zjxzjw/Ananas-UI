@@ -1,20 +1,29 @@
 <template>
   <div class="code-box">
     <div
-        class="show-code"
-        @click="
-        showCode = showCode === 'container-show' ? 'container-hide' : 'container-show'
-      "
-    >
+    class="show-code"
+    @click="
+          showCode = showCode === 'container-show' ? 'container-hide' : 'container-show'
+        "
+      >
       {{ showText }}
     </div>
-    <div :class="showCode">
-      <highlightjs :code="code" language="JavaScript" />
+    <transition
+      name="code-box"
+      @enter="hEnter"
+    >
+      <div ref="codeRef" :class="showCode" v-show="showCode === 'container-show'">
+        <highlightjs :code="code" language="JavaScript" />
+      </div>
+    </transition>
     </div>
-  </div>
 </template>
 
 <script setup>
+const hEnter = () => {
+  const height = codeRef.value.scrollHeight;
+  codeRef.value.style.height = height + "px";
+}
 const props = defineProps({
   comp: {
     type: String,
@@ -37,6 +46,7 @@ async function getCode() {
 }
 
 const showCode = ref("container-hide");
+const codeRef = ref(null);
 
 onMounted(() => {
   getCode();
@@ -44,23 +54,31 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
+.code-box-enter-from,
+.code-box-leave-to {
+  height: 0px!important;
+}
+
 .code-box{
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: left;
 }
 
 .container-show {
-  margin-top: 1rem;
+  overflow: hidden;
+  transition: all .5s;
   width: 100%;
   border-radius: 0.2rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .container-hide {
-  margin-top: 1rem;
+  height: 0px;
   width: 100%;
-  display: none;
+  overflow: hidden;
+  transition: all .5s;
 }
 
 .show-code {
