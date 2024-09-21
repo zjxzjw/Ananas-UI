@@ -1,31 +1,42 @@
+## Notification 通知
+
+<h5 style="color: #66d476">天空好想下雨，我好想住你隔壁</h5>
+
 <script setup>
   import BasicDemo from '../demo/basic_demo.vue'
   import TypeDemo from '../demo/type_demo.vue'
   import HideCloseDemo from '../demo/hide_close_demo.vue'
   import PositionDemo from '../demo/position_demo.vue'
   import preview from '../../../src/components/preview.vue'
-
 </script>
 
 ### 基础用法
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">基本用法</p>
+
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">基本通知</p>
 <BasicDemo />
 <preview comp="notification" demo="basic_demo"/>
 
-### 自定义消息弹出的位置
-<PositionDemo />
-<preview comp="notification" demo="position_demo"/>
-
 ### 不同类型的通知
+
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">不合适的话可以尝试换一个试试</p>
 <TypeDemo />
 <preview comp="notification" demo="type_demo"/>
 
 ### 隐藏关闭按钮
+
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">不想看见我？我走就是了呜呜呜</p>
 <HideCloseDemo />
 <preview comp="notification" demo="hide_close_demo"/>
 
+### 自定义弹出位置
+
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">上上下下左左右右</p>
+<PositionDemo />
+<preview comp="notification" demo="position_demo"/>
+
 ### API 属性
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">关于怎么控制按钮，看看这</p>
+
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">这个组件怎么可以这么丝滑</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

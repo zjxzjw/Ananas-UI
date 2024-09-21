@@ -1,3 +1,12 @@
+<template>
+  <an-space>
+    <an-button @click="hClick1" secondary>top-right</an-button>
+    <an-button @click="hClick2" secondary>top-left</an-button>
+    <an-button @click="hClick3" secondary>bottom-right</an-button>
+    <an-button @click="hClick4" secondary>bottom-left</an-button>
+  </an-space>
+</template>
+
 <script setup>
 import { AnNotification } from '../index'
 
@@ -30,16 +39,3 @@ const hClick4 = () => {
   })
 }
 </script>
-
-<template>
-  <an-space>
-    <an-button @click="hClick1" secondary>top-right</an-button>
-    <an-button @click="hClick2" secondary>top-left</an-button>
-    <an-button @click="hClick3" secondary>bottom-right</an-button>
-    <an-button @click="hClick4" secondary>bottom-left</an-button>
-  </an-space>
-</template>
-
-<style>
-
-</style>  

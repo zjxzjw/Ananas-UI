@@ -1,5 +1,12 @@
+<template>
+  <an-space>
+    <an-button @click="hClick1" secondary>自动关闭</an-button>
+    <an-button @click="hClick2" secondary>手动关闭</an-button>
+  </an-space>
+</template>
+
 <script setup>
-import { AnNotification } from '../index'
+import {AnNotification} from '../index'
 
 const hClick1 = () => {
   AnNotification({
@@ -15,14 +22,3 @@ const hClick2 = () => {
   })
 }
 </script>
-
-<template>
-  <an-space>
-    <an-button @click="hClick1" secondary>自动关闭</an-button>
-    <an-button @click="hClick2" secondary>需要手动关闭</an-button>
-  </an-space>
-</template>
-
-<style>
-
-</style>  

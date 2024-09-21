@@ -1,5 +1,14 @@
+<template>
+  <an-space>
+    <an-button @click="hClick1" type="success">success</an-button>
+    <an-button @click="hClick2" type="info">info</an-button>
+    <an-button @click="hClick3" type="primary">warning</an-button>
+    <an-button @click="hClick4" type="error">error</an-button>
+  </an-space>
+</template>
+
 <script setup>
-import { AnNotification } from '../index'
+import {AnNotification} from '../index'
 
 const hClick1 = () => {
   AnNotification({
@@ -34,16 +43,3 @@ const hClick4 = () => {
   })
 }
 </script>
-
-<template>
-  <an-space>
-    <an-button @click="hClick1" type="success">success</an-button>
-    <an-button @click="hClick2" type="info">info</an-button>
-    <an-button @click="hClick3" type="primary">warning</an-button>
-    <an-button @click="hClick4" type="error">error</an-button>
-  </an-space>
-</template>
-
-<style>
-
-</style>  

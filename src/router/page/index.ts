@@ -87,6 +87,11 @@ export default [
                 component: () => import('@packages/model/doc/index.md')
             },
             {
+                path: '/notification',
+                name: 'Notification 通知',
+                component: () => import('@packages/notification/doc/index.md')
+            },
+            {
                 path: '/numberAnimation',
                 name: 'Number Animation 数值动画',
                 component: () => import('@packages/number_animation/doc/index.md')
@@ -135,11 +140,6 @@ export default [
                 path: '/table',
                 name: 'Table 表格',
                 component: () => import('@packages/table/doc/index.md')
-            },
-            {
-                path: '/notification',
-                name: 'Notification 通知',
-                component: () => import('@packages/notification/doc/index.md')
             },
             {
                 path: '/abc',
