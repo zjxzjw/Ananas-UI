@@ -132,6 +132,11 @@ export default [
                 component: () => import('@packages/table/doc/index.md')
             },
             {
+                path: '/notification',
+                name: 'Notification 通知',
+                component: () => import('@packages/notification/doc/index.md')
+            },
+            {
                 path: '/abc',
                 name: '持续更新中~',
                 component: () => import('@packages/dev/doc/index.md')
