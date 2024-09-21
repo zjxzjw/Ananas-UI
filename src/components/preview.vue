@@ -1,11 +1,9 @@
 <template>
   <div class="code-box">
     <div
-    class="show-code"
-    @click="
-          showCode = showCode === 'container-show' ? 'container-hide' : 'container-show'
-        "
-      >
+      class="show-code"
+      @click="showCode = showCode === 'container-show' ? 'container-hide' : 'container-show'"
+    >
       {{ showText }}
     </div>
     <transition
