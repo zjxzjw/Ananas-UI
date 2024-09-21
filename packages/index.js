@@ -18,6 +18,8 @@ import AnImage from './image/index.js'
 import AnCheckbox from './checkbox/index.js'
 import AnChart from './chart/index.js'
 import AnModel from './model/index.js'
+import AnPagination from './pagination/index.js'
+import AnDataTable from './data_table/index.js'
 
 const components = [
     AnButton,
@@ -38,7 +40,9 @@ const components = [
     AnImage,
     AnCheckbox,
     AnChart,
-    AnModel
+    AnModel,
+    AnPagination,
+    AnDataTable
 ]
 
 const install = app => {
@@ -72,6 +76,8 @@ export {
     AnImage,
     AnCheckbox,
     AnChart,
-    AnModel
+    AnModel,
+    AnPagination,
+    AnDataTable
 }
 export default AnanasUI

@@ -57,6 +57,11 @@ export default [
                 component: () => import('@packages/checkbox/doc/index.md')
             },
             {
+                path: '/data_table',
+                name: 'Data Table 数据表格',
+                component: () => import('@packages/data_table/doc/index.md')
+            },
+            {
                 path: '/ellipsis',
                 name: 'Ellipsis 文本省略',
                 component: () => import('@packages/ellipsis/doc/index.md')
@@ -95,6 +100,11 @@ export default [
                 path: '/numberAnimation',
                 name: 'Number Animation 数值动画',
                 component: () => import('@packages/number_animation/doc/index.md')
+            },
+            {
+                path: '/pagination',
+                name: 'Pagination 分页',
+                component: () => import('@packages/pagination/doc/index.md')
             },
             {
                 path: '/radio',

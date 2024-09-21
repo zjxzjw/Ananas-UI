@@ -31,6 +31,7 @@
     "gh-pages": "^6.1.1",
     "highlight.js": "^11.9.0",
     "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
     "pinia": "^2.1.7",
     "sass": "^1.77.2",
     "typescript": "^5.2.2",
