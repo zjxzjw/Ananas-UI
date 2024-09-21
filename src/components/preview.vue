@@ -73,14 +73,14 @@ onMounted(() => {
   border-radius: 0.2rem;
   line-height: 1.5rem;
   height: 1.5rem;
-  margin: 1rem 1rem 1rem 0rem;
+  margin: 1rem 1rem 1rem 0;
   transition: box-shadow 0.5s, color 0.5s;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  //box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(0, 0, 0, 0.2);
 
   &:hover {
     color: #66d476;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-
+    //box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   }
 }
 

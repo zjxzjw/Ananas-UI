@@ -1,4 +1,5 @@
 ## Number Animation 数值动画
+
 <h5 style="color: #66d476">在我们相遇之前，是否把时间拨快一点</h5>
 
 <script setup>
@@ -9,23 +10,28 @@
 </script>
 
 ### 基本用法
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">再给我两分钟</p>
 <BasicDemo />
 <Preview comp="number_animation" demo="basic_demo"/>
 
 ### 时间
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">可以将时间调成很慢很慢很慢很慢很慢~</p>
 <TimeDemo />
 <Preview comp="number_animation" demo="time_demo"/>
 
 ### 尺寸
+
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">大，大，大</p>
 <SizeDemo />
 <Preview comp="number_animation" demo="size_demo"/>
 
 <!-- API表格 -->
-### API
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">数值动画组件可控属性~</p>
+
+### API 属性
+
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">数值动画组件可控属性~</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

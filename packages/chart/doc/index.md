@@ -1,4 +1,5 @@
 ## Chart 图表
+
 <h5 style="color: #66d476">这世界总有人在忙忙碌碌寻宝藏</h5>
 
 <script setup>
@@ -27,8 +28,10 @@
 <Preview comp="chart" demo="pie_demo" />
 
 <!-- API表格 -->
-### API
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">具体属性可参考Echarts官网~</p>
+
+### API 属性
+
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">具体属性可参考Echarts官网~</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {

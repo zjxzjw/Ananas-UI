@@ -1,5 +1,5 @@
 ## Ellipsis 文本省略
-<h5 style="color: #66d476">翻着我们的照片，想念若隐若现</h5>
+<h5 style="color: #66d476">让爱渗透了地面，我要的只是你在我身边</h5>
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
@@ -24,8 +24,8 @@
 <Preview comp="ellipsis" demo="show_demo" />
 
 <!-- API表格 -->
-### API
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有好多尺寸的标签</p>
+### API 属性
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">再爱我一遍~</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {
