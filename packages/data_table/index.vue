@@ -1,5 +1,5 @@
 <template>
-  <div class="virtual-table" ref="tableRef" @scroll="handleScroll" :style="{ width: tableWidth, height: tableHeight }">
+  <div class="an-data-table" ref="tableRef" @scroll="handleScroll" :style="{ width: tableWidth, height: tableHeight }">
     <div v-if="fixedHeader" class="header-container" :style="{ width: tableWidth }">
       <table>
         <thead>
@@ -222,7 +222,7 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
-.virtual-table {
+.an-data-table {
   position: relative;
   overflow-y: auto;
   width: 100%;
