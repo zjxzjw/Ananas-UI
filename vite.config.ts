@@ -60,19 +60,19 @@ export default defineConfig({
     host: true,
     open: true
   },
-  // build: {
-  //   rollupOptions:{
-  //     external:['vue'],
-  //     output:{
-  //       globals:{
-  //         vue:'Vue'
-  //       }
-  //     }
-  //   },
-  //   lib:{
-  //     entry: './packages/index.js',
-  //     name: 'ananas-ui',
-  //     fileName: 'ananas-ui'
-  //   }
-  // }
+  build: {
+    rollupOptions:{
+      external:['vue'],
+      output:{
+        globals:{
+          vue:'Vue'
+        }
+      }
+    },
+    lib:{
+      entry: './packages/index.js',
+      name: 'ananas-ui',
+      fileName: 'ananas-ui'
+    }
+  }
 })
