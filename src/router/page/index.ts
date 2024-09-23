@@ -97,6 +97,11 @@ export default [
                 component: () => import('@packages/notification/doc/index.md')
             },
             {
+                path: '/tooltip',
+                name: 'Tooltip 文字提示',
+                component: () => import('@packages/Tooltip/doc/index.md')
+            },
+            {
                 path: '/numberAnimation',
                 name: 'Number Animation 数值动画',
                 component: () => import('@packages/number_animation/doc/index.md')

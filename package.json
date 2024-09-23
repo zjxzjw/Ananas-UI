@@ -24,6 +24,8 @@
     "pub": "npm publish --access public"
   },
   "dependencies": {
+    "@floating-ui/core": "^1.6.8",
+    "@floating-ui/dom": "^1.6.11",
     "@fontsource/fira-mono": "^5.0.15",
     "@highlightjs/vue-plugin": "^2.1.0",
     "@types/node": "^22.5.3",
