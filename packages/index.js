@@ -20,6 +20,7 @@ import AnChart from './chart/index.js'
 import AnModel from './model/index.js'
 import AnPagination from './pagination/index.js'
 import AnDataTable from './data_table/index.js'
+import { AnNotification } from './notification/index.ts'
 
 const components = [
     AnButton,
@@ -78,6 +79,7 @@ export {
     AnChart,
     AnModel,
     AnPagination,
-    AnDataTable
+    AnDataTable,
+    AnNotification
 }
 export default AnanasUI
