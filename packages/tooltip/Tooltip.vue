@@ -1,20 +1,28 @@
 <script setup lang='ts'>
-import { computePosition, offset, shift } from '@floating-ui/dom'
-import { ref } from 'vue';
-import { AnTooltipProps } from './types'
-// TODO 箭头位置 placement
+import {
+  computePosition,
+  offset,
+  shift,
+  arrow,
+autoUpdate
+} from '@floating-ui/dom'
+import { ref, onMounted } from 'vue';
+import { AnTooltipProps } from './types';
+import { useClickOutside } from './hooks/useClickOutside';
 
 defineOptions({
   name: 'AnTooltip',
 })
 
-withDefaults(defineProps<AnTooltipProps>(), {
+const props = withDefaults(defineProps<AnTooltipProps>(), {
   placement: 'bottom',
+  trigger: 'hover',
   content: '',
 }) 
 
 const anHostTooltipRef = ref<HTMLElement | null>(null)
 const anTooltipFloatingBoxRef = ref<HTMLElement | null>(null)
+const anTooltipArrowRef = ref<HTMLElement | null>(null)
 const visible = ref(false)
 
 const updatePosition = () => {
@@ -22,25 +30,80 @@ const updatePosition = () => {
     anHostTooltipRef.value!,
     anTooltipFloatingBoxRef.value!,
     {
-      placement: 'bottom',
-      middleware: [offset(10), shift()]
+      placement: props.placement,
+      middleware: [
+        offset(10),
+        shift(),
+        arrow({
+          element: anTooltipArrowRef.value!,
+        }),
+      ]
     },
-  ).then(({ x, y }) => {
+  ).then(({ x, y, middlewareData }) => {
+    if (middlewareData.arrow) {
+    const {x: arrowX, y: arrowY} = middlewareData.arrow;
+    if(props.placement.startsWith('bottom')) {
+      Object.assign(anTooltipArrowRef.value!.style, {
+        left: arrowX != null ? `${arrowX}px` : '',
+        top: '-5px',
+      });
+    }
+    if(props.placement.startsWith('top')) {
+      Object.assign(anTooltipArrowRef.value!.style, {
+        left: arrowX != null ? `${arrowX}px` : '',
+        bottom: '-5px',
+        transform: 'rotate(225deg)'
+      });
+    }
+    if(props.placement.startsWith('left')) {
+      Object.assign(anTooltipArrowRef.value!.style, {
+        right: '-5px',
+        top: arrowY != null ? `${arrowY}px` : '',
+        transform: 'rotate(135deg)'
+      });
+    }
+    if(props.placement.startsWith('right')) {
+      Object.assign(anTooltipArrowRef.value!.style, {
+        left: '-5px',
+        top: arrowY != null ? `${arrowY}px` : '',
+        transform: 'rotate(-45deg)'
+      });
+    }
+  }
     Object.assign(anTooltipFloatingBoxRef.value!.style, {
-      transform: `translate(${x}px, ${y}px)`,
+      left: `${x}px`,
+      top: `${y}px`
     })
   })
 }
 
+onMounted(() => {
+  autoUpdate(anHostTooltipRef.value!, anTooltipFloatingBoxRef.value!, updatePosition)
+})
+
 const slots = defineSlots()
-console.log(slots)
 
 const handleMouseEnter = () => {
+  if(props.trigger === 'click') return
   visible.value = true
-  updatePosition()
 }
 const handleMouseLeave = () => {
+  if(props.trigger === 'click') return
   visible.value = false
+}
+
+const handleClick = () => {
+  if(props.trigger === 'click') {
+    visible.value = !visible.value
+  }
+}
+
+if(props.trigger === 'click') {
+  useClickOutside(anTooltipFloatingBoxRef, (e) => {
+    debugger
+    if(anHostTooltipRef.value!.contains(e.target as HTMLElement)) return
+    visible.value = false
+  })
 }
 
 </script>
@@ -51,25 +114,28 @@ const handleMouseLeave = () => {
     ref="anHostTooltipRef"
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
+    @click="handleClick"
   >
     <slot name="reference"></slot>
-    <transition
-      name="an-tooltip-fade"
-    >
-      <div
-        v-show="visible"
-        ref="anTooltipFloatingBoxRef"
-        class="an-tooltip-floating-box"
-        >
-        <template
-          v-if="slots.default"
-        >
-          <slot></slot>
-        </template>
-        <span v-else>{{ content }}</span>
-        <div class="an-tooltip-arrow"></div>
-      </div>
-    </transition>
+    <teleport to='body'>
+      <transition
+        name="an-tooltip-fade"
+      >
+        <div
+          v-show="visible"
+          ref="anTooltipFloatingBoxRef"
+          class="an-tooltip-floating-box"
+          >
+          <template
+            v-if="slots.default"
+          >
+            <slot></slot>
+          </template>
+          <span v-else>{{ content }}</span>
+          <div ref="anTooltipArrowRef" class="an-tooltip-arrow"></div>
+        </div>
+      </transition>
+    </teleport>
   </div>
 </template>
 
@@ -79,7 +145,6 @@ const handleMouseLeave = () => {
   opacity: 0;
 }
 .an-host-tooltip {
-  position: relative;
   display: inline-flex;
 }
 .an-tooltip-floating-box {
@@ -90,5 +155,16 @@ const handleMouseLeave = () => {
   border-radius: 5px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
   transition: opacity .4s;
+}
+.an-tooltip-arrow {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transform: rotate(45deg);
+  background-color: #fff;
 }
 </style>
