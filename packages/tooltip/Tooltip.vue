@@ -3,12 +3,12 @@ import {
   computePosition,
   offset,
   shift,
-  arrow,
-autoUpdate
+  arrow
 } from '@floating-ui/dom'
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 import { AnTooltipProps } from './types';
 import { useClickOutside } from './hooks/useClickOutside';
+import { useAutoUpdate } from './hooks/useAutoUpdate';
 
 defineOptions({
   name: 'AnTooltip',
@@ -77,9 +77,7 @@ const updatePosition = () => {
   })
 }
 
-onMounted(() => {
-  autoUpdate(anHostTooltipRef.value!, anTooltipFloatingBoxRef.value!, updatePosition)
-})
+useAutoUpdate(anHostTooltipRef, anTooltipFloatingBoxRef, updatePosition);
 
 const slots = defineSlots()
 
