@@ -19,7 +19,9 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d dist",
+    "build:docs": "vite build --config ./vite.docs.config.ts",
+    "docs:preview": "pnpm run build:docs && vite preview",
+    "deploy": "pnpm run build:docs && gh-pages -d dist",
     "prepub": "pnpm run build",
     "pub": "npm publish --access public"
   },
