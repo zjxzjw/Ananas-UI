@@ -124,7 +124,7 @@ const footerClass = computed(() => `footer-align-${props.footerAlign}`);
 .fade-modal-enter-active, .fade-modal-leave-active {
   transition: opacity .3s;
 }
-.fade-modal-enter, .fade-modal-leave-to /* .fade-modal-leave-active in <2.1.8 */ {
+.fade-modal-enter-from, .fade-modal-leave-to /* .fade-modal-leave-active in <2.1.8 */ {
   opacity: 0;
 }
 
