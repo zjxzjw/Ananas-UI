@@ -61,6 +61,7 @@ export default defineConfig({
     open: true
   },
   build: {
+    // 部署文档打包请注释
     rollupOptions:{
       external:['vue'],
       output:{

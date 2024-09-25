@@ -26,7 +26,6 @@
 
 <script setup>
 import { ref } from 'vue';
-import AnSpace from "@packages/space/index.vue";
 
 const showModal = ref(false);
 const modalWidth = ref('400px');

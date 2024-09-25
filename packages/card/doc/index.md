@@ -8,6 +8,11 @@
     import SizeDemo from '../demo/size_demo.vue'
     import BodyDemo from '../demo/body_demo.vue'
     import FooterDemo from '../demo/footer_demo.vue'
+    import ColorDemo from '../demo/color_demo.vue'
+    import BorderDemo from '../demo/border_demo.vue'
+    import BoxShowDemo from '../demo/box_show_demo.vue'
+    import HeightDemo from '../demo/height_demo.vue'
+    import ClickDemo from '../demo/click_demo.vue'
     import Preview from '../../../src/components/preview.vue'
 </script>
 
@@ -40,6 +45,36 @@
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">卡片也可以有腿</p>
 <FooterDemo />
 <Preview comp="card" demo="footer_demo" />
+
+### 自定义高度
+
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">改变自己！</p>
+<HeightDemo />
+<Preview comp="card" demo="height_demo" />
+
+### 点击事件
+
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">改变自己！</p>
+<ClickDemo />
+<Preview comp="card" demo="click_demo" />
+
+### 自定义边框
+
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">改变自己！</p>
+<BorderDemo />
+<Preview comp="card" demo="border_demo" />
+
+### 自定义阴影
+
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">改变自己！</p>
+<BoxShowDemo />
+<Preview comp="card" demo="box_show_demo" />
+
+### 自定义颜色
+
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">改变世界！</p>
+<ColorDemo />
+<Preview comp="card" demo="color_demo" />
 
 <!-- API表格 -->
 
@@ -77,10 +112,52 @@
                 explain: '高度属性'
             },
 			{
-				name: 'hoverable',
+				name: 'hover-able',
 				type: 'Boolean',
 				default: 'false | true',
 				explain: '悬浮卡片'
+			},
+			{
+				name: 'border-color',
+				type: 'String',
+				default: '#d9d9d9',
+				explain: '边框颜色'
+			},
+			{
+				name: 'background-color',
+				type: 'String',
+				default: 'white',
+				explain: '背景颜色'
+			},
+			{
+				name: 'border-radius',
+				type: 'String | Number',
+				default: '4px',
+				explain: '圆角'
+			},
+			{
+				name: 'box-shadow',
+				type: 'String',
+				default: 'null',
+				explain: '阴影'
+			},
+			{
+				name: 'hover-box-shadow',
+				type: 'String',
+				default: '0 2px 12px 0 rgba(0, 0, 0, 0.1)',
+				explain: '动作阴影'
+			},
+			{
+				name: 'header-height',
+				type: 'String | Number',
+				default: '6vh',
+				explain: '头部高度'
+			},
+			{
+				name: 'footer-height',
+				type: 'String | Number',
+				default: '6vh',
+				explain: '尾部高度'
 			}
         ]
   }

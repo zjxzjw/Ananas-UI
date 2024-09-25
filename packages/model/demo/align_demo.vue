@@ -1,5 +1,4 @@
 <template>
-  <!-- 切换对齐方式的按钮 -->
   <an-space>
     <an-button type="success" @click="showModal = true">点我</an-button>
     <p>切换：</p>

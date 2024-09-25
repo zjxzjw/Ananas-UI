@@ -1,11 +1,9 @@
 <template>
-  <div class="chart-box">
     <an-chart
         :chart-data="barChartData"
         chart-type="bar"
         :custom-options="barChartOptions"
     />
-  </div>
 </template>
 
 <script>
@@ -38,11 +36,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.chart-box{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-</style>
