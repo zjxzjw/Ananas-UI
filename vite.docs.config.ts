@@ -54,5 +54,8 @@ export default defineConfig({
     },
     // 忽略后缀
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
+  },
+  build: {
+    outDir: 'dist-docs'
   }
 })
