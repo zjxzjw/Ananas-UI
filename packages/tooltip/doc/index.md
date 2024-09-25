@@ -6,7 +6,7 @@
 
 ## Tooltip 文字提示
 
-<h5 style="color: #66d476">你站的方位，跟我中间隔着泪</h5>
+<h5 style="color: #66d476">这世界总有人在忙忙碌碌寻宝藏~</h5>
 
 ### 基本用法
 
@@ -22,7 +22,7 @@
 
 ### API 属性
 
-<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">这个组件怎么可以这么丝滑</p>
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">猜猜我从哪里出现</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {
@@ -67,10 +67,11 @@
 <br>
 <br>
 
-### 插槽
+### Slot 插槽
 
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">猜猜我从哪里出现</p>
 <script setup>
-    const data2 = {
+    const slot_data = {
         columns: [
             {
                 title: '插槽名'
@@ -91,4 +92,4 @@
         ]
     }
 </script>
-<ApiTable :data="data2" />
+<ApiTable :data="slot_data" />

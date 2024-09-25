@@ -137,6 +137,11 @@ export default [
                 component: () => import('@packages/table/doc/index.md')
             },
             {
+                path: '/tabs',
+                name: 'Tabs 标签页',
+                component: () => import('@packages/tabs/doc/index.md')
+            },
+            {
                 path: '/tag',
                 name: 'Tag 标签',
                 component: () => import('@packages/tag/doc/index.md')

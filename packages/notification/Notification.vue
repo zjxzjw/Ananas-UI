@@ -104,13 +104,13 @@ defineExpose({
       :style="[cssComputed]"
     >
     <div v-show="iconName" class="an-notification__icon">
-      <AnIcon :name="iconName" :color="iconColor"></AnIcon>
+      <AnIcon :name="iconName" :color="iconColor" ></AnIcon>
     </div>
     <div class="an-notification__content">
       <div class="an-notification__header">
         <div class="an-notification__title">{{ title }}</div>
         <div v-if="!hideClose" class="an-notification__close" @click="toggleVisible(false)">
-          <AnIcon name="close"></AnIcon>
+          <AnIcon name="close" size="1em"></AnIcon>
         </div>
       </div>
       <div class="an-notification__message">{{ message }}</div>

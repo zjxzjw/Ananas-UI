@@ -100,6 +100,7 @@ props.inline ? isInline.value = 'inline-flex' : isInline.value = 'flex'
     cursor: pointer;
     font-size: 14px;
     margin-right: 15px;
+    margin-top: 5px;
     user-select: none;
 
     span {

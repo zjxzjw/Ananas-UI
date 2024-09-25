@@ -21,6 +21,8 @@ import AnModel from './model/index.js'
 import AnPagination from './pagination/index.js'
 import AnDataTable from './data_table/index.js'
 import { AnNotification } from './notification/index.ts'
+import AnTabs from './tabs/index.js'
+import AnPane from './tabs/pane/index.js'
 
 const components = [
     AnButton,
@@ -43,7 +45,9 @@ const components = [
     AnChart,
     AnModel,
     AnPagination,
-    AnDataTable
+    AnDataTable,
+    AnTabs,
+    AnPane
 ]
 
 const install = app => {
@@ -80,6 +84,9 @@ export {
     AnModel,
     AnPagination,
     AnDataTable,
-    AnNotification
+    AnNotification,
+    AnTabs,
+    AnMessage,
+    AnPane
 }
 export default AnanasUI

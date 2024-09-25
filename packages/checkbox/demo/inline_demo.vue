@@ -9,9 +9,10 @@ import { ref } from 'vue'
 const selectedHobbies = ref()
 
 const hobbies = [
-  { label: '阅读', value: 'reading' },
-  { label: '音乐', value: 'music' },
-  { label: '旅行', value: 'traveling' },
-  { label: '摄影', value: 'photography' }
+  { label: '唱', value: 'sing' },
+  { label: '跳', value: 'dance' },
+  { label: 'Rap', value: 'rap' },
+  { label: '篮球', value: 'basketball' },
+  { label: 'Music', value: 'music' }
 ]
 </script>
