@@ -165,6 +165,7 @@ const footerClass = computed(() => `footer-align-${props.footerAlign}`);
   justify-content: space-between;
   align-items: center;
   position: relative;
+  font-weight: 999;
 
   & h3, .fade-modal-header h3, .slide-modal-header h3, .zoom-modal-header h3, .slide-left-modal-header h3, .slide-right-modal-header h3 {
     margin-top: 0;

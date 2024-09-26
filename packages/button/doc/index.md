@@ -9,6 +9,7 @@
     import RoundDemo from '../demo/round_demo.vue'
     import SecondaryDemo from '../demo/secondary_demo.vue'
     import SizeDemo from '../demo/size_demo.vue'
+    import CustomSizeDemo from '../demo/custom_size_demo.vue'
     import CustomColorDemo from '../demo/custom_color_demo.vue'
 	import TransformDemo from '../demo/transform_demo.vue'
     import Preview from '../../../src/components/preview.vue'
@@ -61,6 +62,12 @@
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">圆圆的也很可爱~</p>
 <RoundDemo />
 <Preview comp="button" demo="round_demo"/>
+
+### 自定义尺寸
+
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">不好看！</p>
+<CustomSizeDemo />
+<Preview comp="button" demo="custom_size_demo"/>
 
 ### 自定义颜色
 
@@ -126,6 +133,18 @@
                 type: 'String',
                 default: 'default | small | large',
                 explain: '尺寸属性'
+            },
+            {
+                name: 'widht',
+                type: 'String',
+                default: 'null',
+                explain: '自定义宽度'
+            },
+            {
+                name: 'height',
+                type: 'String',
+                default: 'null',
+                explain: '自定义高度'
             },
             {
                 name: 'background',

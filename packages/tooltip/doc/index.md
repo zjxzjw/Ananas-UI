@@ -74,7 +74,7 @@
     const slot_data = {
         columns: [
             {
-                title: '插槽名'
+                title: ' 名称'
             },
             {
                 title: '说明'

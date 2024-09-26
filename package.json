@@ -32,6 +32,7 @@
     "@highlightjs/vue-plugin": "^2.1.0",
     "@types/node": "^22.5.3",
     "echarts": "^5.5.1",
+    "echarts-gl": "^2.0.9",
     "gh-pages": "^6.1.1",
     "highlight.js": "^11.9.0",
     "lodash": "^4.17.21",

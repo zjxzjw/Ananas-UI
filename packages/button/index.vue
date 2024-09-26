@@ -1,18 +1,18 @@
 <template>
-  <button :class="button_class" :disabled="disabled">
+  <button :class="button_class" :style="button_style" :disabled="disabled">
     <slot></slot>
   </button>
 </template>
 
 <script>
-import {computed} from 'vue'
-
 export default {
-  name: "AnButton"
+  name: 'AnButton'
 }
 </script>
 
 <script setup>
+import { computed } from 'vue';
+
 const props = defineProps({
   type: {
     type: String,
@@ -23,26 +23,36 @@ const props = defineProps({
     default: false,
   },
   disabled: {
-    type: Boolean
+    type: Boolean,
+    default: false,
   },
   secondary: {
-    type: Boolean
+    type: Boolean,
+    default: false,
   },
   size: {
     type: String,
     default: 'default'
   },
   background: {
-    type: String
+    type: String,
   },
   textColor: {
-    type: String
+    type: String,
   },
   transform: {
     type: String,
-    default: ''
+    default: '',
+  },
+  width: {
+    type: [String, Number],
+    default: null,
+  },
+  height: {
+    type: [String, Number],
+    default: null,
   }
-})
+});
 
 const button_class = computed(() => {
   return [
@@ -54,20 +64,32 @@ const button_class = computed(() => {
     props.secondary ? `an-button-${props.type}-secondary` : '',
     props.background ? `an-button-background` : '',
     props.textColor ? `an-button-text-color` : ''
-  ]
-})
+  ];
+});
+
+const button_style = computed(() => {
+  const style = {};
+  if (props.width) {
+    style.width = typeof props.width === 'number' ? `${props.width}px` : props.width;
+  }
+  if (props.height) {
+    style.height = typeof props.height === 'number' ? `${props.height}px` : props.height;
+  }
+  if (props.transform) {
+    style.transform = props.transform;
+  }
+  return style;
+});
 </script>
 
 <style scoped lang="scss">
 /* 按钮 */
 .an-button {
-  width: 5rem;
-  //margin-right: 0.7rem;
+  // 移除了默认的宽度和高度，因为现在可以通过 props 自定义
   display: inline-block;
   border-radius: 0.3rem;
   padding: 0 4px;
   font-size: 0.75rem;
-  height: 32px;
   line-height: 1;
   box-sizing: border-box;
   color: #2235468c;
@@ -77,7 +99,6 @@ const button_class = computed(() => {
   &:hover {
     opacity: 0.7;
     transform: v-bind(transform);
-    //transform: skew(1.1)
   }
 }
 

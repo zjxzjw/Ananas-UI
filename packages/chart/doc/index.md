@@ -17,13 +17,13 @@
 
 ### 常用图形
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">具体可参考Echarts官网, 这里只做封装</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">具体可参考Echarts官网, 这里只做基础封装</p>
 <LineDemo />
 <Preview comp="chart" demo="line_demo" />
 
 ### 其他类型
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">具体可参考Echarts官网, 这里只做封装</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">具体可参考Echarts官网, 这里只做基础封装</p>
 <PieDemo />
 <Preview comp="chart" demo="pie_demo" />
 

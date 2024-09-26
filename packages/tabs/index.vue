@@ -107,7 +107,7 @@
   .tabs {
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 5px;
     overflow: hidden;
     background-color: #fff;
     border: 1px solid #e0e0e0;
@@ -149,6 +149,6 @@
   
   .tabs-body {
     padding: 20px;
-    border-top: 1px solid #e0e0e0;
+    //border-top: 1px solid #e0e0e0;
   }
   </style>
