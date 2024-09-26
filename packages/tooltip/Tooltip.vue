@@ -98,7 +98,6 @@ const handleClick = () => {
 
 if(props.trigger === 'click') {
   useClickOutside(anTooltipFloatingBoxRef, (e) => {
-    debugger
     if(anHostTooltipRef.value!.contains(e.target as HTMLElement)) return
     visible.value = false
   })
