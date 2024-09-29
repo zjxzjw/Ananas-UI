@@ -45,7 +45,7 @@ app.mount('#app')
 
 ## 文档
 
-[Ananas UI 文档](https://zjxzjw.github.io/Ananas-UI/)
+[Ananas UI 文档](https://zjxzjw.github.io/Ananas-UI/#/ananas)
 
 ## 许可证
 
