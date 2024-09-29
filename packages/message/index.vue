@@ -18,11 +18,21 @@ const props = defineProps({
     type: Boolean,
     default: false
   },
-  top: {
-    type: [Number, String],
-    default: 16 // 默认值
+  id: {
+    type: String,
+    required: true
+  },
+  onDestroy: {
+    type: Function,
+    required: true
+  },
+  gap: {
+    type: Number,
+    default: 20
   }
 });
+
+const gapString = computed(() => `${props.gap}px`);
 
 const show = ref(false);
 
@@ -32,27 +42,37 @@ const anMessageClass = computed(() => ({
   [`an-message-secondary-${props.type}`]: props.secondary
 }));
 
-// 计算样式对象
-const computedStyle = computed(() => ({
-  top: `${props.top}px`
-}));
+let timeoutId = null;
 
 onMounted(() => {
   show.value = true;
   // 开始计时器，等待一段时间后隐藏消息
-  const timeoutId = setTimeout(() => {
+  timeoutId = setTimeout(() => {
     show.value = false;
   }, props.duration);
 
-  // 将计时器保存在一个可访问的地方以便取消
-  const clearTimer = () => clearTimeout(timeoutId);
-  onUnmounted(clearTimer);
 });
+
+// 将计时器保存在一个可访问的地方以便取消
+const clearTimer = () => clearTimeout(timeoutId);
+onUnmounted(clearTimer);
+
+const handleEnter = (el) => {
+  el.style.height = el.offsetHeight + 'px';
+};
+const handleAfterLeave = (el) => {
+  props.onDestroy(props.id);
+};
+
 </script>
 
 <template>
-  <Transition name="bounce">
-    <div :class="anMessageClass" v-show="show" :style="computedStyle">
+  <Transition
+    name="bounce"
+    @enter="handleEnter"
+    @after-leave="handleAfterLeave"
+    >
+    <div :class="anMessageClass" v-show="show">
       <div class="an-message-content">{{ message }}</div>
     </div>
   </Transition>
@@ -61,16 +81,12 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .an-message {
-  position: absolute;
-  top: 1rem;
-  left: calc(50% - 6.25rem);
-  z-index: 99;
   padding: 8px 24px;
   border-radius: 4px;
   box-sizing: border-box;
-  width: 15rem;
-  height: 5vh;
+  min-width: 200px;
   text-align: center;
+  margin-bottom: v-bind(gapString);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
   .an-message-content {
@@ -127,13 +143,18 @@ onMounted(() => {
 
 .bounce-enter-active,
 .bounce-leave-active {
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 }
 
 .bounce-enter-from,
 .bounce-leave-to {
   opacity: 0;
-  transform: translateY(-50px);
+  transform: translateY(-50%);
+}
+.bounce-leave-to {
+  height: 0px!important;
+  padding: 0px 24px;
+  margin-top: v-bind("'-' + gapString");
 }
 
 @keyframes bounce-in {

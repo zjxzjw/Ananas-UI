@@ -67,6 +67,18 @@
                 type: 'Boolean',
                 default: 'false | true',
                 explain: '次要属性'
+            },
+            {
+                name: 'offset',
+                type: 'Number',
+                default: '10',
+                explain: '偏移量(单位：px)'
+            },
+            {
+                name: 'gap',
+                type: 'Number',
+                default: '20',
+                explain: '消息间隔距离(单位：px)'
             }
         ]
   }
