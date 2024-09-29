@@ -13,14 +13,11 @@
     <div class="button">
       <an-space>
         <router-link to="/fast">
-          <an-button type="primary" size="large" transform="scale(1.1)">
+          <an-button type="primary" transform="scale(1.1)">
             快速上手
           </an-button>
         </router-link>
-        <!--<an-button type="success" size="large" transform="scale(1.1)" @click="toGitEE">
-                  Gitee
-                </an-button>-->
-        <an-button type="success" size="large" transform="scale(1.1)" @click="toGitHub">
+        <an-button type="success" transform="scale(1.1)" @click="toGitHub">
           GitHub
         </an-button>
       </an-space>
