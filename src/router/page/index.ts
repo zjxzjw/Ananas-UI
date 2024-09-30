@@ -102,6 +102,11 @@ export default [
                 component: () => import('@packages/Tooltip/doc/index.md')
             },
             {
+                path: '/loading',
+                name: 'Loading 加载',
+                component: () => import('@packages/loading/doc/index.md')
+            },
+            {
                 path: '/numberAnimation',
                 name: 'Number Animation 数值动画',
                 component: () => import('@packages/number_animation/doc/index.md')

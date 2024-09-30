@@ -24,6 +24,8 @@ import AnDataTableColumn from './data_table/column/index.js'
 import {AnNotification} from './notification/index.ts'
 import AnTabs from './tabs/index.js'
 import AnPane from './tabs/pane/index.js'
+import AnLoading from './loading/index.ts'
+import AnTooltip from './tooltip/index.ts'
 
 const components = [
     AnButton,
@@ -49,7 +51,9 @@ const components = [
     AnDataTable,
     AnTabs,
     AnPane,
-    AnDataTableColumn
+    AnDataTableColumn,
+    AnLoading,
+    AnTooltip
 ]
 
 const install = app => {
@@ -90,6 +94,8 @@ export {
     AnTabs,
     AnMessage,
     AnPane,
-    AnDataTableColumn
+    AnDataTableColumn,
+    AnLoading,
+    AnTooltip
 }
 export default AnanasUI
