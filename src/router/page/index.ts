@@ -1,4 +1,4 @@
-import {type RouteRecordRedirect} from 'vue-router'
+import { type RouteRecordRaw } from 'vue-router';
 
 export default [
     {
@@ -178,4 +178,4 @@ export default [
         name: 'Ananas',
         component: () => import('@/views/index.vue')
     }
-] as RouteRecordRedirect[]
+] as RouteRecordRaw[]
