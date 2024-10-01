@@ -1,35 +1,18 @@
 {
-  "name": "ananas-ui",
-  "version": "0.1.9",
-  "main": "./dist/ananas-ui.umd.js",
-  "module": "./dist/ananas-ui.js",
-  "exports": {
-    ".": {
-      "import": "./dist/ananas-ui.js",
-      "require": "./dist/ananas-ui.umd.js"
-    },
-    "./dist/style.css": "./dist/style.css"
-  },
-  "files": [
-    "dist/*"
-  ],
-  "private": false,
-  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "predeploy": "pnpm run build",
-    "build:docs": "vite build --config ./vite.docs.config.ts",
-    "docs:preview": "pnpm run build:docs && vite preview --config ./vite.docs.config.ts",
-    "deploy": "pnpm run build:docs && gh-pages -d dist-docs",
-    "prepub": "pnpm run build",
-    "pub": "npm publish --access public"
+    "dev": "pnpm run --filter ananas-ui-docs dev",
+    "build": "pnpm run --filter ananas-ui build",
+    "pub": "pnpm run --filter ananas-ui pub",
+    "build:docs": "pnpm run --filter ananas-ui-docs build:docs",
+    "deploy": "pnpm run --filter ananas-ui-docs deploy"
   },
   "dependencies": {
     "@floating-ui/core": "^1.6.8",
     "@floating-ui/dom": "^1.6.11",
     "@fontsource/fira-mono": "^5.0.15",
     "@highlightjs/vue-plugin": "^2.1.0",
+    "rollup-plugin-visualizer": "^5.12.0",
     "@types/node": "^22.5.3",
     "echarts": "^5.5.1",
     "echarts-gl": "^2.0.9",

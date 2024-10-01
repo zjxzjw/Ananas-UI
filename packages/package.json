@@ -1,0 +1,35 @@
+{
+  "name": "ananas-ui",
+  "version": "0.1.9",
+  "main": "./dist/umd/ananas-ui.umd.js",
+  "module": "./dist/es/ananas-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/es/ananas-ui.js",
+      "require": "./dist/umd/ananas-ui.umd.js"
+    },
+    "./dist/style.css": "./dist/umd/style.css"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build-es": "vite build --config ./vite.es.config.ts",
+    "build-umd": "vite build --config ./vite.umd.config.ts",
+    "build": "pnpm run build-es && pnpm run build-umd",
+    "pub": "npm publish --access public"
+  },
+  "dependencies": {
+    "@floating-ui/core": "^1.6.8",
+    "@floating-ui/dom": "^1.6.11",
+    "@fontsource/fira-mono": "^5.0.15",
+    "echarts": "^5.5.1",
+    "echarts-gl": "^2.0.9"
+  },
+  "peerDependencies": {
+    "vue": ">=3.2.0"
+  }
+}

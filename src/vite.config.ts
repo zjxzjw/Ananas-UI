@@ -49,31 +49,13 @@ export default defineConfig({
   resolve: {
     // 别名
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@packages': path.resolve(__dirname, 'packages'),
+      '@': path.resolve(__dirname, '.'),
+      '@packages': path.resolve(__dirname, '../', 'packages'),
     },
     // 忽略后缀
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
   },
-  server: {
-    port: 5173,
-    host: true,
-    open: true
-  },
   build: {
-    // 部署文档打包请注释
-    rollupOptions:{
-      external:['vue'],
-      output:{
-        globals:{
-          vue:'Vue'
-        }
-      }
-    },
-    lib:{
-      entry: './packages/index.js',
-      name: 'ananas-ui',
-      fileName: 'ananas-ui'
-    }
+    outDir: 'dist'
   }
 })

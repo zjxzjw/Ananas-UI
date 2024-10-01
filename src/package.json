@@ -1,0 +1,13 @@
+{
+  "name": "ananas-ui-docs",
+  "version": "0.1.9",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:docs": "vite build",
+    "docs:preview": "pnpm run build:docs && vite preview",
+    "deploy": "pnpm run build:docs && gh-pages -d dist"
+  }
+}

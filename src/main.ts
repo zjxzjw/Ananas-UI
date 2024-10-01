@@ -9,7 +9,8 @@ import 'highlight.js/styles/atom-one-dark.css'
 import 'highlight.js/lib/common'
 import hljsVuePlugin from "@highlightjs/vue-plugin"
 
-import AnAnAsUI from '../packages'
+// @ts-expect-error
+import AnAnAsUI from '../packages/index.js'
 
 const app = createApp(App)
 
