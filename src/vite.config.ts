@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Markdown from 'vite-plugin-md'
 import AutoImport from 'unplugin-auto-import/vite'
+import { visualizer } from 'rollup-plugin-visualizer'
 import path from 'path'
 
 // https://vitejs.dev/config/
@@ -44,7 +45,10 @@ export default defineConfig({
     }),
     Markdown({
       builders: []
-    })
+    }),
+    visualizer({
+      filename: 'report/vite-plugin.html',
+    }),
   ],
   resolve: {
     // 别名
