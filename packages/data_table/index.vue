@@ -1,19 +1,22 @@
 <template>
   <div class="tableBox" :style="{ height: tableHeight, width: width }">
     <table class="an-table" :class="{ 'an-table-border': bordered }">
+      <!-- 渲染表头 -->
       <thead v-if="showHeader">
-      <tr>
-        <th v-for="(column, index) in columns" :key="index" :style="{ width: column.width, textAlign: align }" :class="{ 'custom-head': headBackground || headColor }">
-          {{ column.label }}
-        </th>
-      </tr>
+        <tr>
+          <slot></slot>
+        </tr>
       </thead>
+      <!-- 渲染表格主体数据 -->
       <tbody>
       <tr v-for="(item, rowIndex) in data" :key="rowIndex">
         <td v-for="(column, colIndex) in columns" :key="colIndex" :style="{ width: column.width, textAlign: align }">
-          <slot :name="`cell-${colIndex}`" :row="item" :column="column">
+          <template v-if="$slots.default && $slots.default()[colIndex].children">
+            <RenderSlot :slot="$slots.default()[colIndex].children.default({row:item})"></RenderSlot>
+          </template>
+          <template v-else>
             {{ item[column.prop] }}
-          </slot>
+          </template>
         </td>
       </tr>
       </tbody>
@@ -28,7 +31,8 @@ export default {
 </script>
 
 <script setup>
-import { computed, useSlots } from 'vue';
+import { computed } from 'vue';
+import RenderSlot from './render-slot';
 
 const props = defineProps({
   data: {
@@ -65,19 +69,9 @@ const props = defineProps({
   }
 });
 
-const slots = useSlots();
+const columns = ref([]);
+provide('columns', columns)
 
-const getColumnsFromSlots = () => {
-  return (slots.default ? slots.default() : []).map(vnode => ({
-    label: vnode.props.label,
-    prop: vnode.props.prop,
-    width: vnode.props.width
-  }));
-};
-
-const columns = computed(() => {
-  return getColumnsFromSlots();
-});
 </script>
 
 <style lang="scss" scoped>

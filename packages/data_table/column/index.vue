@@ -1,7 +1,7 @@
 <template>
-  <div :style="{ width: width }" class="an-data-table-column">
-    <slot name="default" :label="label" :prop="prop" :width="width"></slot>
-  </div>
+  <th :style="{ width: width }" class="an-data-table-column">
+    {{ label }}
+  </th>
 </template>
 
 <script>
@@ -28,6 +28,14 @@ const props = defineProps({
     default: 'auto' // 默认宽度为自动
   }
 });
+
+const column = inject('columns');
+
+column.value.push({
+  label: props.label,
+  prop: props.prop
+})
+
 </script>
 
 <style scoped>
