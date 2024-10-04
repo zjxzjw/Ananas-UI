@@ -84,7 +84,7 @@ const handleAfterLeave = (el) => {
   padding: 8px 24px;
   border-radius: 4px;
   box-sizing: border-box;
-  min-width: 200px;
+  min-width: 20vw;
   text-align: center;
   margin-bottom: v-bind(gapString);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

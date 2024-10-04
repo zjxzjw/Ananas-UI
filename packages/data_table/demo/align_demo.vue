@@ -1,5 +1,5 @@
 <template>
-  <an-data-table :data="tableData">
+  <an-data-table :data="tableData" align="center">
     <an-data-table-column label="名称" prop="name" />
     <an-data-table-column label="歌手" prop="people" />
     <an-data-table-column label="专辑" prop="album" />

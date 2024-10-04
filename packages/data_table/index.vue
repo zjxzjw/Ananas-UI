@@ -31,7 +31,6 @@ export default {
 </script>
 
 <script setup>
-import { computed } from 'vue';
 import RenderSlot from './render-slot';
 
 const props = defineProps({
@@ -49,7 +48,7 @@ const props = defineProps({
   },
   tableHeight: {
     type: String,
-    default: '300px'
+    default: 'auto'
   },
   width: {
     type: String,
@@ -86,9 +85,13 @@ provide('columns', columns)
   width: 100%;
   border-collapse: collapse;
 
-  th {
+  tr{
+    display: table-row;
+    text-align: v-bind(align);
+    border-bottom: 1px solid #ccc;
+  }
 
-    padding: 12px 0;
+  th {
     text-align: v-bind(align);
     background: v-bind(headBackground);
     color: v-bind(headColor);
@@ -98,9 +101,8 @@ provide('columns', columns)
   td {
     color: #606270;
     border-bottom: 1px solid #ccc;
-    padding: 12px 0;
     text-align: v-bind(align);
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   &-border {

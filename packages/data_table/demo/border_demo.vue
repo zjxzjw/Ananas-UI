@@ -1,8 +1,8 @@
 <template>
-  <an-data-table :data="tableData">
+  <an-data-table :data="tableData" :bordered="true" :show-header="true">
     <an-data-table-column label="名称" prop="name" />
     <an-data-table-column label="歌手" prop="people" />
-    <an-data-table-column label="专辑" prop="album" />
+    <an-data-table-column label="专辑" prop="album"  />
     <an-data-table-column label="Actions" prop="action">
       <template #default="{ row }">
         <an-space>
