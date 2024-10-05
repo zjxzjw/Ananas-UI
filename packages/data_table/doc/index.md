@@ -1,6 +1,6 @@
 ## Data Table 数据表格
 
-<h5 style="color: #66d476">杜松混合茉莉的风回忆里被爱</h5>
+<h5 style="color: #66d476">我们好像在哪见过，你记得吗</h5>
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
@@ -38,7 +38,7 @@
 
 ### API 属性
 
-<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">Better Me!</p>
+<p style="color: var(--color-success); font-size: 14px; font-weight: 900;">已经不存在的小镇，为何会让我魂牵梦绕</p>
 <script setup>
     import ApiTable from '../../../src/components/api_table.vue'
     const data = {
@@ -92,18 +92,6 @@
 				type: 'String',
 				default: 'left',
 				explain: '对齐方式'
-			},
-			{
-				name: 'head-background',
-				type: 'String',
-				default: 'white',
-				explain: '标头背景'
-			},
-			{
-				name: 'head-color',
-				type: 'String',
-				default: 'black',
-				explain: '标头文字颜色'
 			}
         ]
   }

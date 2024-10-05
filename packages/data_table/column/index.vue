@@ -41,5 +41,6 @@ column.value.push({
 <style scoped>
 .an-data-table-column {
   box-sizing: border-box; /* 确保 padding 和 border 不会增加元素的总宽度 */
+  padding: 12px 0;
 }
 </style>

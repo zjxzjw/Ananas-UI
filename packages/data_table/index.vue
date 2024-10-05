@@ -57,14 +57,6 @@ const props = defineProps({
   align: {
     type: String,
     default: 'left'
-  },
-  headBackground: {
-    type: String,
-    default: 'white'
-  },
-  headColor: {
-    type: String,
-    default: '#303133'
   }
 });
 
@@ -89,13 +81,6 @@ provide('columns', columns)
     display: table-row;
     text-align: v-bind(align);
     border-bottom: 1px solid #ccc;
-  }
-
-  th {
-    text-align: v-bind(align);
-    background: v-bind(headBackground);
-    color: v-bind(headColor);
-    padding: 1rem;
   }
 
   td {
