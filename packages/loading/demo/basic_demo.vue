@@ -15,7 +15,6 @@ const handleClick = () => {
 </script>
 
 <template>
-  <h3>基本用法</h3>
   <an-space>
     <AnButton @click="visible = true">显示</AnButton>
     <AnButton @click="visible = false">隐藏</AnButton>
