@@ -32,6 +32,7 @@ export default {
 
 <script setup>
 import RenderSlot from './render-slot';
+import { ref, provide } from 'vue';
 
 const props = defineProps({
   data: {

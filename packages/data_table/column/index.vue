@@ -12,7 +12,7 @@ export default {
 </script>
 
 <script setup>
-import {defineProps} from 'vue';
+import { inject } from 'vue';
 
 const props = defineProps({
   label: {
