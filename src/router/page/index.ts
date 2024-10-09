@@ -157,11 +157,6 @@ export default [
                 component: () => import('@packages/tree/doc/index.md')
             },
             {
-                path: '/table',
-                name: 'Table 表格',
-                component: () => import('@packages/table/doc/index.md')
-            },
-            {
                 path: '/abc',
                 name: '持续更新中~',
                 component: () => import('@packages/dev/doc/index.md')
