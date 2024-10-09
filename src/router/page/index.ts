@@ -112,11 +112,6 @@ export default [
                 component: () => import('@packages/number_animation/doc/index.md')
             },
             {
-                path: '/pagination',
-                name: 'Pagination 分页',
-                component: () => import('@packages/pagination/doc/index.md')
-            },
-            {
                 path: '/radio',
                 name: 'Radio 单选',
                 component: () => import('@packages/radio/doc/index.md')

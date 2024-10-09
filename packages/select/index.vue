@@ -1,23 +1,21 @@
 <template>
-  <div :class="anSelectClass" v-clickOutside>
+  <div :class="anSelectClass" v-click-outside>
     <input
-      type="text"
-      readonly
-      :value="selectValue"
-      :disabled="disabled"
-      :placeholder="placeholder"
+        type="text"
+        readonly
+        :value="selectValue"
+        :disabled="disabled"
+        :placeholder="placeholder"
+        @click="positionShow = !positionShow"
     />
     <transition name="slide-fade">
       <div class="an-position-box" v-if="positionShow">
         <li
-          v-for="(item, index) in options"
-          :key="index"
-          @click="change(item, index)"
-          :class="{
-            'item-disabled-li': item.disabled,
-            'item-active-li': activeIndex == index,
-          }"
-          class="item-li"
+            v-for="(item, index) in options"
+            :key="index"
+            @click="change(item, index)"
+            :class="{ 'item-disabled-li': item.disabled, 'item-active-li': activeIndex === index }"
+            class="item-li"
         >
           {{ item[filedLabel] }}
         </li>
@@ -29,53 +27,54 @@
 <script>
 export default {
   name: "AnSelect",
-};
+}
 </script>
 
 <script setup>
+import { ref, computed, watch } from 'vue';
+
 const emit = defineEmits(["change", "update:modelValue"]);
-
-const positionShow = ref(false);
-
-const activeIndex = ref(-1);
 
 const props = defineProps({
   options: {
     type: Array,
-    default: () => [],
+    default: () => []
   },
   disabled: {
     type: Boolean,
-    default: false,
+    default: false
   },
   filedLabel: {
     type: String,
-    default: "label",
+    default: "label"
   },
   filedValue: {
     type: String,
-    default: "value",
+    default: "value"
   },
   placeholder: {
     type: String,
-    default: "请选择",
+    default: "请选择"
   },
   modelValue: {
     type: String,
-    default: "",
+    default: ""
   },
   size: {
     type: String,
-    default: "default",
-  },
+    default: "default"
+  }
 });
 
 const selectValue = ref(props.modelValue);
+const positionShow = ref(false);
+const activeIndex = ref(-1);
 
-props.options.forEach((item, index) => {
-  if (item[props.filedValue] === props.modelValue) {
-    selectValue.value = item[props.filedLabel];
-    activeIndex.value = index;
+watch(() => props.modelValue, (newVal) => {
+  selectValue.value = newVal;
+  const selectedIndex = props.options.findIndex(option => option[props.filedValue] === newVal);
+  if (selectedIndex !== -1) {
+    activeIndex.value = selectedIndex;
   }
 });
 
@@ -91,29 +90,22 @@ const change = (item, index) => {
 
 const vClickOutside = {
   beforeMount(el) {
-    let hanlder = (e) => {
-      if (!props.disabled) {
-        if (el.contains(e.target) && e.target.className.indexOf("item-li") === -1) {
-          positionShow.value = true;
-        } else {
-          if (!e.target.className.indexOf("item-disabled-li") === -1) {
-          }
-          positionShow.value = false;
-        }
+    const handler = (e) => {
+      if (!el.contains(e.target)) {
+        positionShow.value = false;
       }
     };
-
-    document.addEventListener("click", hanlder);
-  },
+    document.addEventListener("click", handler);
+    return () => {
+      document.removeEventListener("click", handler);
+    };
+  }
 };
 
-const anSelectClass = computed(() => {
-  return {
-    "an-select": true,
-    "an-select-small": props.size === "small",
-    "an-select-large": props.size === "large",
-  };
-});
+const anSelectClass = computed(() => ({
+  "an-select": true,
+  [`an-select-${props.size}`]: props.size
+}));
 </script>
 
 <style lang="scss" scoped>
@@ -126,7 +118,7 @@ const anSelectClass = computed(() => {
 }
 
 .slide-fade-enter-from,
-slide-fade-leave-to {
+.slide-fade-leave-to {
   transform: translateY(15px);
   opacity: 0;
 }

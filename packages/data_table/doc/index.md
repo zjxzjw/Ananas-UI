@@ -92,6 +92,24 @@
 				type: 'String',
 				default: 'left',
 				explain: '对齐方式'
+			},
+			{
+				name: 'show-pagination',
+				type: 'Boolean',
+				default: 'false | true',
+				explain: '是否开启分页控制'
+			},
+			{
+				name: 'default-pageSize',
+				type: 'Boolean',
+				default: 'false | true',
+				explain: '是否开启总条数'
+			},
+			{
+                name: 'pagination-align',
+				type: 'String',
+				default: 'flex-start | center | flex-end',
+				explain: '对齐方式'
 			}
         ]
   }
