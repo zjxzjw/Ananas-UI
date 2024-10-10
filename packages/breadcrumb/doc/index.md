@@ -72,6 +72,12 @@
         ],
         item: [
             {
+                name: 'data',
+                type: 'Array',
+                default: '[]',
+                explain: '内容数据'
+            },
+            {
                 name: 'separator',
                 type: 'String | Number',
                 default: '/',
@@ -136,12 +142,6 @@
                 type: 'String',
                 default: 'white',
                 explain: '文本背景颜色'
-            },
-            {
-                name: 'data',
-                type: 'Array',
-                default: '[]',
-                explain: '内容数据'
             }
         ]
   }
