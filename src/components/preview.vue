@@ -59,8 +59,7 @@ const sourceHash = computed(() => {
 });
 
 const toPlayground = () => {
-  console.log(`${window.location.origin}/?${code.value}#/playground`)
-  window.open(`${window.location.origin}/?${sourceHash.value}#/playground`, '_blank')
+  window.open(`${window.location.origin}/Ananas-UI/?${sourceHash.value}#/playground`, '_blank')
 }
 
 </script>
