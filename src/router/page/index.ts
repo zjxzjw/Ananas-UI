@@ -167,5 +167,10 @@ export default [
         path: '/ananas',
         name: 'Ananas',
         component: () => import('@/views/index.vue')
+    },
+    {
+        path: '/playground',
+        name: 'Playground',
+        component: () => import('@/components/Playground/Playground.vue')
     }
 ] as RouteRecordRaw[]

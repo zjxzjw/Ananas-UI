@@ -1,10 +1,13 @@
 <template>
   <div class="code-box">
-    <div
-      class="show-code"
-      @click="showCode = showCode === 'container-show' ? 'container-hide' : 'container-show'"
-    >
-      {{ showText }}
+    <div style="display: flex;">
+      <div
+        class="show-code"
+        @click="showCode = showCode === 'container-show' ? 'container-hide' : 'container-show'"
+      >
+        {{ showText }}
+      </div>
+      <div class="show-code" @click="toPlayground">演练场</div>
     </div>
     <transition
       name="code-box"
@@ -49,6 +52,17 @@ const codeRef = ref(null);
 onMounted(() => {
   getCode();
 });
+
+// toPlayground
+const sourceHash = computed(() => {
+  return btoa(unescape(encodeURIComponent(JSON.stringify(code.value))));
+});
+
+const toPlayground = () => {
+  console.log(`${window.location.origin}/?${code.value}#/playground`)
+  window.open(`${window.location.origin}/?${sourceHash.value}#/playground`, '_blank')
+}
+
 </script>
 
 <style scoped lang="scss">
