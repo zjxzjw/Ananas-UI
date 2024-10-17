@@ -64,9 +64,9 @@
             },
             {
                 name: 'size',
-                type: 'String',
+                type: '[Number, String]',
                 default: '24px',
-                explain: '字体大小'
+                explain: '字体大小,传数字默认单位为px'
             }
         ]
   }
