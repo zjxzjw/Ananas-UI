@@ -9,6 +9,7 @@ export default {
 </script>
 
 <script setup>
+import { status } from './utils'
 const props = defineProps({
   num: {
     type: Number,
@@ -19,33 +20,76 @@ const props = defineProps({
     default: 1000
   },
   size: {
-    type: String,
+    type: [String, Number],
     default: '24px'
+  },
+  isReverse: {
+    type: Boolean,
+    default: false
   }
 });
 
-let current = ref('');
+const size = computed(() => {
+  if(typeof props.size === 'number') {
+    return props.size + 'px'
+  }
+  return props.size
+})
 
-const numberGrow = () => {
-  let step = Math.ceil((props.num * 100) / (props.duration * 1000));
-  let start = 0;
-  let timer = setInterval(() => {
-    start += step;
-    if (start > props.num) {
-      clearInterval(timer);
-      start = props.num;
-      timer = null;
-    }
-    if (start === 0) {
-      start = props.num;
-      clearInterval(timer);
-    }
-    current.value = start.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,');
-  }, props.duration * 100);
+let current = ref('');
+let runQueue = ref([]);
+
+
+const numberRunning = (start, end) => {
+  let step = Math.ceil((Math.abs(end-start) * 100) / (props.duration * 1000));
+  let currentNum = start;
+  return () => new Promise(res => {
+    let timer = setInterval(() => {
+      if(start < end) {
+        currentNum += step;
+      } else {
+        currentNum -= step;
+      }
+      if (
+        (start < end && currentNum >= end) ||
+        (start > end && currentNum <= end)
+      ) {
+        clearInterval(timer);
+        currentNum = end;
+        timer = null;
+        runQueue.value[0].status = status.finished
+        runQueue.value.shift()
+        runQueue.value = [...runQueue.value]
+        res()
+      }
+      current.value = currentNum.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,');
+    }, props.duration * 100);
+  })
 }
 
+watch(
+  () => props.num,
+  (num, preNum) => {
+  runQueue.value.push({
+    status: status.noStart,
+    task: numberRunning(preNum, num)
+  })
+  runQueue.value = [...runQueue.value]
+})
+
+watch(runQueue, async (cur, pre) => {
+  if(runQueue.value.length && runQueue.value[0].status === status.noStart) {
+    runQueue.value[0].status = status.running
+    runQueue.value[0].task()
+  }
+})
+
 onMounted(() => {
-  numberGrow();
+  runQueue.value.push({
+    status: status.noStart,
+    task: numberRunning(0, props.num)
+  });
+  runQueue.value = [...runQueue.value]
 })
 </script>
 
