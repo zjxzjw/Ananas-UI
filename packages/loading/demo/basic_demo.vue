@@ -1,6 +1,5 @@
 <script setup lang='ts'>
 import { ref } from 'vue'
-import AnLoading from '../Loading.vue'
 
 const visible = ref(false)
 const visible2 = ref(false)
