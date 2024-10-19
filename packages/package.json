@@ -1,14 +1,14 @@
 {
   "name": "ananas-ui",
-  "version": "0.1.10",
-  "main": "./dist/umd/ananas-ui.umd.js",
+  "version": "0.1.11",
+  "main": "./dist/lib/ananas-ui.cjs",
   "module": "./dist/es/ananas-ui.js",
   "exports": {
     ".": {
       "import": "./dist/es/ananas-ui.js",
-      "require": "./dist/umd/ananas-ui.umd.js"
+      "require": "./dist/lib/ananas-ui.cjs"
     },
-    "./dist/style.css": "./dist/umd/style.css"
+    "./dist/style.css": "./dist/es/style.css"
   },
   "files": [
     "dist/*"
@@ -18,8 +18,10 @@
   "scripts": {
     "dev": "vite",
     "build-es": "vite build --config ./vite.es.config.ts",
-    "build-umd": "vite build --config ./vite.umd.config.ts",
-    "build": "pnpm run build-es && pnpm run build-umd",
+    "build-lib": "vite build --config ./vite.lib.config.ts",
+    "build-dist": "vite build --config ./vite.dist.config.ts",
+    "clear": "rimraf dist",
+    "build": "pnpm run clear && pnpm run build-es && pnpm run build-lib && pnpm run build-dist",
     "pub": "npm publish --access public"
   },
   "dependencies": {
