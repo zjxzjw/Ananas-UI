@@ -9,17 +9,17 @@
 </script>
 
 ### 基本用法
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">基本的消息</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 基本的消息</p>
 <BasicDemo />
 <Preview comp="message" demo="basic_demo"/>
 
 ### 果冻消息
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">果冻类型的消息</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 果冻类型的消息</p>
 <SecondaryDemo />
 <Preview comp="message" demo="secondary_demo"/>
 
 ### 消息时间
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">定制消息持续时间</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 定制消息持续时间</p>
 <TimeDemo />
 <Preview comp="message" demo="time_demo"/>
 

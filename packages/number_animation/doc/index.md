@@ -11,19 +11,19 @@
 
 ### 基本用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">再给我两分钟</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 再给我两分钟</p>
 <BasicDemo />
 <Preview comp="number_animation" demo="basic_demo"/>
 
 ### 时间
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">可以将时间调成很慢很慢很慢很慢很慢~</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 可以将时间调成很慢很慢很慢很慢很慢~</p>
 <TimeDemo />
 <Preview comp="number_animation" demo="time_demo"/>
 
 ### 尺寸
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">大，大，大</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 大，大，大</p>
 <SizeDemo />
 <Preview comp="number_animation" demo="size_demo"/>
 

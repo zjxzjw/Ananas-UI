@@ -10,13 +10,13 @@
 
 ### 基本用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"> 9 种不同方向的展示方式</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 9 种不同方向的展示方式</p>
 <BasicDemo />
 <Preview comp="tooltip" demo="basic_demo"/>
 
 ### 触发方式
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">click or hover</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># click or hover</p>
 <TriggerDemo/>
 <Preview comp="tooltip" demo="trigger_demo"/>
 

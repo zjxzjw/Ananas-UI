@@ -12,25 +12,25 @@
 
 ### 基本用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">超级精选！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 超级精选！</p>
 <BasicDemo />
 <Preview comp="data_table" demo="basic_demo" />
 
 ### 对齐方式
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">靠右一点！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 靠右一点！</p>
 <AlignDemo />
 <Preview comp="data_table" demo="align_demo" />
 
 ### 尺寸
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">可以定制的表格！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 可以定制的表格！</p>
 <SizeDemo />
 <Preview comp="data_table" demo="size_demo" />
 
 ### 边框
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">边框是 crucial 的！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 边框是 crucial 的！</p>
 <BorderDemo />
 <Preview comp="data_table" demo="border_demo" />
 

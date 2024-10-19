@@ -9,7 +9,7 @@
 
 ### 基础用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">失去的温柔最温柔~</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 失去的温柔最温柔~</p>
 <BasicDemo />
 <Preview comp="loading" demo="basic_demo"/>
 

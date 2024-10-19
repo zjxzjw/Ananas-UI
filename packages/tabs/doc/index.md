@@ -8,7 +8,7 @@
 </script>
 
 ### 基础用法
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">暂时还没想好写些什么</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 暂时还没想好写些什么</p>
 <BasicDemo />
 <Preview comp="tabs" demo="basic_demo" />
 

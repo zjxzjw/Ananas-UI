@@ -12,25 +12,25 @@
 
 ### 基本用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">图片往往比文字更能传递信息</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 图片往往比文字更能传递信息</p>
 <BasicDemo />
 <Preview comp="image" demo="basic_demo" />
 
 ### 填充模式
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">回忆的画面，在荡着秋千，梦开始不甜</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 回忆的画面，在荡着秋千，梦开始不甜</p>
 <FillDemo />
 <Preview comp="image" demo="fill_demo" />
 
 ### 预览模式
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">更喜欢大一点~</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 更喜欢大一点~</p>
 <PreViewDemo />
 <Preview comp="image" demo="preview_demo" />
 
 ### 懒加载
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">懒懒的~~</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 懒懒的~~</p>
 <LazyDemo />
 <Preview comp="image" demo="lazy_demo" />
 

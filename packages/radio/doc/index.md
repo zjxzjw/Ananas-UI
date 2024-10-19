@@ -13,31 +13,31 @@
 
 ### 基本用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">这是一个单选按钮组</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 这是一个单选按钮组</p>
 <BasicDemo />
 <preview comp="radio" demo="basic_demo"/>
 
 ### 禁用状态
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">不许点！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 不许点！</p>
 <DisabledDemo />
 <preview comp="radio" demo="disabled_demo"/>
 
 ### 自定义颜色
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">绿色是春天的颜色</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 绿色是春天的颜色</p>
 <CustomColor />
 <preview comp="radio" demo="custom_color_demo"/>
 
 ### 排列
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">提供了两种排列方式</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 提供了两种排列方式</p>
 <ArrayDemo />
 <preview comp="radio" demo="array_demo"/>
 
 ### 默认选择
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">默默的选择了你</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 默默的选择了你</p>
 <DefaultPoint />
 <preview comp="radio" demo="default_point_demo"/>
 

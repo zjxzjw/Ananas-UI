@@ -14,37 +14,37 @@
 
 ### 基本用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">TAG的基本用法</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># TAG的基本用法</p>
 <BasicDemo />
 <Preview comp="tag" demo="basic_demo"/>
 
 ### 次要标签
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">果冻标签</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 果冻标签</p>
 <SecondaryDemo />
 <Preview comp="tag" demo="secondary_demo"/>
 
 ### 圆角标签
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">圆的！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 圆的！</p>
 <RoundDemo />
 <Preview comp="tag" demo="round_demo"/>
 
 ### 动画效果
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">会动的标签！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 会动的标签！</p>
 <ScaleDemo />
 <Preview comp="tag" demo="scale_demo"/>
 
 ### 尺寸
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有好多尺寸的标签</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 有好多尺寸的标签</p>
 <SizeDemo />
 <Preview comp="tag" demo="size_demo"/>
 
 ### 自定义颜色
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">红，橙，黄，绿，青，蓝，紫的彩虹</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 红，橙，黄，绿，青，蓝，紫的彩虹</p>
 <ColorDemo />
 <Preview comp="tag" demo="color_demo"/>
 

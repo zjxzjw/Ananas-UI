@@ -12,25 +12,25 @@
 
 ### 基本用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">一颗基本的树，不是夏树！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 一颗基本的树，不是夏树！</p>
 <BasicDemo />
 <Preview comp="tree" demo="basic_demo" />
 
 ### 隐藏序号
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">一颗没有序号的树</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 一颗没有序号的树</p>
 <NoneHeaderDemo />
 <Preview comp="tree" demo="none_header_demo" />
 
 ### 滚动的树
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">BUG较大！ 暂时不支持</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># BUG较大！ 暂时不支持</p>
 <!--<OverflowDemo />-->
 <Preview comp="tree" demo="overflow_demo" />
 
 ### 自定义颜色
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">额，看起来颜色并不搭</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 额，看起来颜色并不搭</p>
 <ColorDemo />
 <Preview comp="tree" demo="color_demo" />
 

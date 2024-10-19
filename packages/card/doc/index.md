@@ -18,61 +18,61 @@
 
 ### 基本用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">卡片的基本用法</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 卡片的基本用法</p>
 <BasicDemo />
 <Preview comp="card" demo="basic_demo" />
 
 ### 悬浮卡片
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">好像可以飞起来？</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 好像可以飞起来？</p>
 <HoverableDemo />
 <Preview comp="card" demo="hoverable_demo" />
 
 ### 卡片尺寸
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">自定义卡片尺寸</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 自定义卡片尺寸</p>
 <SizeDemo />
 <Preview comp="card" demo="size_demo" />
 
 ### 没有标题
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">没有标题的卡片</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 没有标题的卡片</p>
 <BodyDemo />
 <Preview comp="card" demo="body_demo" />
 
 ### 卡片底部
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">卡片也可以有腿</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 卡片也可以有腿</p>
 <FooterDemo />
 <Preview comp="card" demo="footer_demo" />
 
-### 自定义高度
-
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">改变自己！</p>
-<HeightDemo />
-<Preview comp="card" demo="height_demo" />
-
 ### 点击事件
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">改变自己！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 当卡片被点击时！</p>
 <ClickDemo />
 <Preview comp="card" demo="click_demo" />
 
+### 自定义高度
+
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 改变自己！</p>
+<HeightDemo />
+<Preview comp="card" demo="height_demo" />
+
 ### 自定义边框
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">改变自己！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 改变自己！</p>
 <BorderDemo />
 <Preview comp="card" demo="border_demo" />
 
 ### 自定义阴影
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">改变自己！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 改变自己！</p>
 <BoxShowDemo />
 <Preview comp="card" demo="box_show_demo" />
 
 ### 自定义颜色
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">改变世界！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 改变世界！</p>
 <ColorDemo />
 <Preview comp="card" demo="color_demo" />
 

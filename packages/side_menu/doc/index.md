@@ -9,7 +9,7 @@
 
 ### 基本用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">城市的霓虹灯太闪亮~</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 城市的霓虹灯太闪亮~</p>
 <BasicDemo />
 <Preview comp="side_menu" demo="basic_demo" />
 

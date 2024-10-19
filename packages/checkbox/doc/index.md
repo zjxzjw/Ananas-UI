@@ -11,19 +11,19 @@
 
 ### 基本用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">可以选择多个！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 可以选择多个！</p>
 <BasicDemo />
 <Preview comp="checkbox" demo="basic_demo" />
 
 ### 排列方式
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">竖着放好像也不错</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 竖着放好像也不错</p>
 <InlineDemo />
 <Preview comp="checkbox" demo="inline_demo" />
 
 ### 自定义颜色
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">改个颜色试试~</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 改个颜色试试~</p>
 <CustomColorDemo />
 <Preview comp="checkbox" demo="custom_color_demo" />
 

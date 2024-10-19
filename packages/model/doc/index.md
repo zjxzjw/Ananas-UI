@@ -12,32 +12,32 @@
 </script>
 
 ### 基本用法
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">模型框的基本用法</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 模型框的基本用法</p>
 <BasicDemo />
 <preview comp="model" demo="basic_demo"/>
 
 ### 尺寸
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">控制模型框不要太大</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 控制模型框不要太大</p>
 <SizeDemo />
 <preview comp="model" demo="size_demo"/>
 
 ### 动画效果
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">突然冒出来吓我一跳！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 突然冒出来吓我一跳！</p>
 <TransitionDemo />
 <preview comp="model" demo="transition_demo"/>
 
 ### 对齐方式
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">上上下下左左右右BABA！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 上上下下左左右右BABA！</p>
 <AlignDemo />
 <preview comp="model" demo="align_demo"/>
 
 ### 自定义内容
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">可以放点有意思的东西~</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 可以放点有意思的东西~</p>
 <SlotDemo />
 <preview comp="model" demo="slot_demo"/>
 
 ### 自定义颜色
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">彩虹模态框，好像不太搭~</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 彩虹模态框，好像不太搭~</p>
 <CustomColorDemo />
 <preview comp="model" demo="custom_color_demo"/>
 

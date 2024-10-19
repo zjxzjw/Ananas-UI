@@ -11,19 +11,19 @@
 
 ### 基本用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">基本间距！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 基本间距！</p>
 <BasicDemo />
 <Preview comp="space" demo="basic_demo"/>
 
 ### 排列
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">也可以竖着的！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 也可以竖着的！</p>
 <ArrayDemo />
 <Preview comp="space" demo="array_demo"/>
 
 ### 尺寸
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">别离我太远</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 别离我太远</p>
 <SizeDemo />
 <Preview comp="space" demo="size_demo"/>
 

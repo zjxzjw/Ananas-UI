@@ -17,61 +17,61 @@
 
 ### 基本用法
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">按钮的基本用法 啊吧啊吧～</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 按钮的基本用法 啊吧啊吧～</p>
 <BasicDemo />
 <Preview comp="button" demo="basic_demo" />
 
 ### 次要按钮
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">看起来像果冻</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 看起来像果冻</p>
 <SecondaryDemo />
 <Preview comp="button" demo="secondary_demo"/>
 
 ### 图标按钮
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">不好看！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 不好看！</p>
 <IconDemo />
 <Preview comp="button" demo="icon_demo"/>
 
 ### 尺寸
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">有default、small、large三种尺寸</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 有default、small、large三种尺寸</p>
 <SizeDemo />
 <Preview comp="button" demo="size_demo"/>
 
 ### 动画效果
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">示例代码终于修复了~</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 示例代码终于修复了~</p>
 <TransformDemo />
 <Preview comp="button" demo="transform_demo"/>
 
 ### 禁用状态
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">不许点！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 不许点！</p>
 <DisabledDemo />
 <Preview comp="button" demo="disabled_demo"/>
 
 ### 图标按钮
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">图标按钮</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 图标按钮</p>
 <IconDemo />
 <Preview comp="button" demo="icon_demo"/>
 
 ### 圆角按钮
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">圆圆的也很可爱~</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 圆圆的也很可爱~</p>
 <RoundDemo />
 <Preview comp="button" demo="round_demo"/>
 
 ### 自定义尺寸
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">不好看！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 不好看！</p>
 <CustomSizeDemo />
 <Preview comp="button" demo="custom_size_demo"/>
 
 ### 自定义颜色
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;">不好看！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 不好看！</p>
 <CustomColorDemo />
 <Preview comp="button" demo="custom_color_demo"/>
 
