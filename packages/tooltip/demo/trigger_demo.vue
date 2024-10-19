@@ -1,5 +1,4 @@
 <script setup lang='ts'>
-import AnTooltip from '../index'
 </script>
 
 <template>

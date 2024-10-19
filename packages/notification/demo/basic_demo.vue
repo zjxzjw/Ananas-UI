@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import {AnNotification} from '../index'
+import {AnNotification} from 'ananas-ui'
 
 const hClick1 = () => {
   AnNotification({

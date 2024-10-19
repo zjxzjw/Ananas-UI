@@ -37,7 +37,7 @@ const importMap = useVueImportMap()
 const builtinImportMap = ref({
   imports: {
     ...importMap.importMap.value.imports,
-    'ananas-ui': 'https://gcore.jsdelivr.net/npm/ananas-ui@0.1.9/dist/ananas-ui.min.js'
+    'ananas-ui': 'https://gcore.jsdelivr.net/npm/ananas-ui@latest/dist/dist/ananas-ui.min.js'
   }
 })
 
@@ -52,7 +52,7 @@ const storeState = toRefs(reactive({
 }))
 
 const previewOptions = reactive({
-  headHTML: '<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/ananas-ui@0.1.9/dist/style.min.css" />'
+  headHTML: '<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/ananas-ui@latest/dist/dist/style.min.css" />'
 })
 
 const store = useStore(storeState)

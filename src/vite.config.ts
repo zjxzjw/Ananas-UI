@@ -55,6 +55,7 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, '.'),
       '@packages': path.resolve(__dirname, '../', 'packages'),
+      'ananas-ui': path.resolve(__dirname, '../', 'packages', 'index.js'),
     },
     // 忽略后缀
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']

@@ -59,7 +59,8 @@ const sourceHash = computed(() => {
 });
 
 const toPlayground = () => {
-  window.open(`${window.location.origin}/Ananas-UI/?${sourceHash.value}#/playground`, '_blank')
+  const basePath = import.meta.env.DEV ? '' : '/Ananas-UI'
+  window.open(`${window.location.origin}${basePath}/?${sourceHash.value}#/playground`, '_blank')
 }
 
 </script>

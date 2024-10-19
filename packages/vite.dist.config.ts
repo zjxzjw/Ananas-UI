@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [
     vue(),
     visualizer({
-      filename: 'dist/umd/stats.html',
+      filename: 'dist/dist/stats.html',
     }),
     AutoImport({
       // targets to transform
@@ -32,9 +32,9 @@ export default defineConfig({
     lib: {
       entry: './index.js',
       name: 'ananas-ui',
-      formats: ['umd'],
+      formats: ['umd', 'es'],
     },
-    outDir: 'dist/umd',
+    outDir: 'dist/dist',
     rollupOptions:{
       external:['vue'],
       output:{
