@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import AnMessage from '../../../packages/message/index.js'
+import {AnMessage} from 'ananas-ui'
 
 const onDefault = () => {
   AnMessage({
