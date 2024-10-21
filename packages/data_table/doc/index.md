@@ -24,13 +24,13 @@
 
 ### 尺寸
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 可以定制的表格！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># MIZIHA !</p>
 <SizeDemo />
 <Preview comp="data_table" demo="size_demo" />
 
 ### 边框
 
-<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 边框是 crucial 的！</p>
+<p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># TAKIKU !</p>
 <BorderDemo />
 <Preview comp="data_table" demo="border_demo" />
 

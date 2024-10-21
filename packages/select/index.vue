@@ -128,6 +128,7 @@ const anSelectClass = computed(() => ({
   display: inline-block;
   height: 40px;
   position: relative;
+  margin-top: 0.5rem;
 
   input {
     border: 1px solid #ccc;
