@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import AnMessage from "../../message/index.js";
+import { AnNotification } from "@packages/notification/index.js";
 // 点击box获取当前icon下面的div的内容
 const handleClick = (e: Event) => {
   const target = e.target as HTMLElement;
@@ -20,10 +20,12 @@ function copyText(text: string) {
   if (navigator.clipboard) {
     copyText = (text) => {
       navigator.clipboard.writeText(text);
-      AnMessage({
-        message: "复制成功!",
-        type: "success",
-      });
+
+      AnNotification({
+        message: '复制成功',
+        title: 'success',
+        type: "success"
+      })
     };
   } else {
     copyText = (text) => {
@@ -33,10 +35,12 @@ function copyText(text: string) {
       input.select();
       document.execCommand("copy");
       document.body.removeChild(input);
-      AnMessage({
-        message: "复制成功!",
-        type: "success",
-      });
+
+      AnNotification({
+        message: '复制成功',
+        title: 'success',
+        type: "success"
+      })
     };
   }
   copyText(text);
