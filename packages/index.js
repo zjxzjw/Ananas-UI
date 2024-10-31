@@ -26,6 +26,7 @@ import AnTabs from './tabs/index.js'
 import AnPane from './tabs/pane/index.js'
 import AnLoading from './loading/index.ts'
 import AnTooltip from './tooltip/index.ts'
+import AnUpload from './upload/index.js'
 
 const components = [
     AnButton,
@@ -53,7 +54,8 @@ const components = [
     AnPane,
     AnDataTableColumn,
     AnLoading,
-    AnTooltip
+    AnTooltip,
+    AnUpload
 ]
 
 const install = app => {
@@ -96,6 +98,7 @@ export {
     AnPane,
     AnDataTableColumn,
     AnLoading,
-    AnTooltip
+    AnTooltip,
+    AnUpload
 }
 export default AnanasUI

@@ -157,6 +157,11 @@ export default [
                 component: () => import('@packages/tree/doc/index.md')
             },
             {
+                path: '/upload',
+                name: 'Upload 文件上传',
+                component: () => import('@packages/upload/doc/index.md')
+            },
+            {
                 path: '/abc',
                 name: '持续更新中~',
                 component: () => import('@packages/dev/doc/index.md')
