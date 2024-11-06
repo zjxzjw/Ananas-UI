@@ -4,13 +4,14 @@
 
 <script setup>
     import BasicDemo from '../demo/basic_demo.vue'
+    import Preview from '../../../src/components/preview.vue'
 </script>
 
 ### 基本用法
 
 <p style="color: #ffcf3f; font-size: 12px; font-weight: 900;"># 基本用法</p>
 <BasicDemo />
-<Preview comp="tree" demo="basic_demo" />
+<Preview comp="upload" demo="basic_demo" />
 
 
 <!-- API表格 -->
