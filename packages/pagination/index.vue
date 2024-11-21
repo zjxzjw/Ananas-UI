@@ -10,7 +10,7 @@
 
     <an-icon name="chevron-right" @click="nextPage" :disabled="currentPage === totalPages"/>
 
-    <an-select :options="pageSizes" :modelValue="pageSize" @update:modelValue="onPageSizeChange" size="small" />
+    <an-select :options="pageSizes" :modelValue="String(pageSize)" @update:modelValue="onPageSizeChange" size="small" />
   </div>
 </template>
 
