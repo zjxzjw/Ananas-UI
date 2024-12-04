@@ -5,7 +5,7 @@
       <li
         v-for="(item, index) in page[0].children"
         :key="index"
-        :class="{ active: activeIndex == index }"
+        :class="{ active: activeIndex === index }"
         @click="switchMenu(item, index)"
       >
         <span>{{ item.name }}</span>

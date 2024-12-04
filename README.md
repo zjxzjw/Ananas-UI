@@ -1,7 +1,7 @@
 <p align="center">
 <a href="https://zjxzjw.github.io/Ananas-UI/#/ananas">
-  <text style="font-size: 40px; font-weight: bold; color: #f1d270;">Ananas</text>
-  <text style="font-size: 40px; font-weight: bold; color: #95cf88">UI</text>
+  <span style="font-size: 40px; font-weight: bold; color: #f1d270;">Ananas</span>
+  <span style="font-size: 40px; font-weight: bold; color: #95cf88">UI</span>
 </a>
 </p>
 
@@ -16,7 +16,7 @@
 
 Ananas UI是一个用于Vue3的轻量UI组件库
 
-> 颜色有点像热带水果
+> 看起来颜色有点像热带水果！
 
 ## 安装教程
 
