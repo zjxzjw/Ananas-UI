@@ -1,4 +1,6 @@
 <p align="center">
+<img src="/src/ananas_logo.png" alt="" width="100" height="100">
+<br/>
 <a href="https://zjxzjw.github.io/Ananas-UI/#/ananas">
   <span style="font-size: 40px; font-weight: bold; color: #f1d270;">Ananas</span>
   <span style="font-size: 40px; font-weight: bold; color: #95cf88">UI</span>
