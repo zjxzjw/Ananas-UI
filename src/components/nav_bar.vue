@@ -3,12 +3,15 @@
     <span class="logo">
       <span style="color: #ffcf3f">Ananas</span>
       <span style="color: #66d476"> UI</span>
+      <span style="margin-left: 0.5rem">
+        <img src="../ananas_logo.png" alt="" width="23" height="23">
+      </span>
     </span>
     <div class="nav-list">
       <router-link to="/ananas" class="nav-item">首页</router-link>
       <router-link to="/fast" class="nav-item">文档</router-link>
       <a class="nav-item" @click="toGitHub"> Github </a>
-      <router-link to="/" class="nav-item">0.1.9</router-link>
+      <router-link to="/" class="nav-item">0.2.1</router-link>
     </div>
   </div>
 </template>
