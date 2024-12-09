@@ -1,7 +1,6 @@
 <template>
   <NavBar/>
   <div class="context">
-    <img src="../ananas_logo.png" alt="" width="200" height="200">
     <div class="title">
       <span class="title_ananas">Ananas</span>
       <span class="title_ui"> UI</span>
