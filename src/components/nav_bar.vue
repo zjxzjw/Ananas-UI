@@ -4,7 +4,7 @@
       <span style="color: #ffcf3f">Ananas</span>
       <span style="color: #66d476"> UI</span>
       <span style="margin-left: 0.5rem">
-        <img src="../ananas_logo.png" alt="" width="23" height="23">
+
       </span>
     </span>
     <div class="nav-list">
