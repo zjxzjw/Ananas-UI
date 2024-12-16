@@ -3,8 +3,8 @@
     <span class="logo">
       <span style="color: #ffcf3f">Ananas</span>
       <span style="color: #66d476"> UI</span>
-      <span style="margin-left: 0.5rem">
-
+      <span style="margin-left: 0.5rem; padding: 10px">
+        
       </span>
     </span>
     <div class="nav-list">
