@@ -99,6 +99,8 @@ const pageSizes = reactive([
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/index.css';
+
 .an-pagination {
   display: flex;
   align-items: center;
@@ -113,7 +115,7 @@ const pageSizes = reactive([
 
   .active {
     font-weight: bold;
-    color: var(--color-primary);
+    color: #febe00;
   }
 
   button[disabled] {
@@ -130,7 +132,7 @@ const pageSizes = reactive([
   }
 
   .an-data_count {
-    color: var(--color-primary);
+    color: #febe00;
   }
 }
 </style>

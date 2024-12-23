@@ -1,7 +1,10 @@
 <template>
-  <an-data-table :data="tableData" :show-pagination="true" :show-total-count="true" :default-page-size="10" :showPageSizeSelector="true"
-                 pagination-align="flex-left"
-  >
+  <an-data-table :data="tableData"
+                 :show-pagination="true"
+                 :show-total-count="true"
+                 :default-page-size="10"
+                 :showPageSizeSelector="true"
+                 pagination-align="flex-left">
     <an-data-table-column label="名称" prop="name" />
     <an-data-table-column label="歌手" prop="people" />
     <an-data-table-column label="专辑" prop="album" />
