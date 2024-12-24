@@ -1,5 +1,4 @@
 <p align="center">
-<img src="/src/ananas_logo.png" alt="" width="100" height="100">
 <br/>
 <a href="https://zjxzjw.github.io/Ananas-UI/#/ananas">
   <span style="font-size: 40px; font-weight: bold; color: #f1d270;">Ananas</span>
@@ -16,7 +15,7 @@
 
 # 介绍
 
-Ananas UI是一个用于Vue3的不轻量超级重重重高度可定制的UI组件库
+Ananas UI是一个用于Vue3的 不轻量 超级重重重 高度可定制 的UI组件库
 
 > 🍍：一个看起来像热带水果风味的 Vue3 UI组件库
 

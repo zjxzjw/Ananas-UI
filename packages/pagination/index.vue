@@ -99,8 +99,6 @@ const pageSizes = reactive([
 </script>
 
 <style scoped lang="scss">
-@import '@/styles/index.css';
-
 .an-pagination {
   display: flex;
   align-items: center;
