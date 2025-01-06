@@ -13,11 +13,11 @@
     <div class="button">
       <an-space>
         <router-link to="/fast">
-          <an-button type="primary" transform="scale(1.1)">
+          <an-button type="primary" transform="scale(1.1)" width="12vw">
             快速上手
           </an-button>
         </router-link>
-        <an-button type="success" transform="scale(1.1)" @click="toGitHub">
+        <an-button type="success" transform="scale(1.1)" @click="toGitHub" width="12vw">
           GitHub
         </an-button>
       </an-space>
@@ -46,7 +46,7 @@ const toGitHub = () => {
 .context {
   text-align: center;
   position: relative;
-  top: 6.5rem;
+  top: 10rem;
 }
 
 .title {
@@ -83,7 +83,7 @@ const toGitHub = () => {
 }
 
 .button {
-  margin-top: 1rem;
+  margin-top: 10rem;
 }
 
 .footer {
