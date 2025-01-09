@@ -1,9 +1,5 @@
 <p align="center">
-<br/>
-<a href="https://zjxzjw.github.io/Ananas-UI/#/ananas">
-  <span style="font-size: 40px; font-weight: bold; color: #f1d270;">Ananas</span>
-  <span style="font-size: 40px; font-weight: bold; color: #95cf88">UI</span>
-</a>
+    <img src="logo.png" width="100"/>
 </p>
 
 <p align="center">
