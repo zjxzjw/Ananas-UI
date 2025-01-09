@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="ananasui.png" width="200"/>
+    <img src="ananasui.png" width="300"/>
 </p>
 
 <p align="center">
