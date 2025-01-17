@@ -24,12 +24,13 @@
   </div>
   <div v-if="showPagination" class="pagination-container">
     <!-- 分页组件 -->
-    <AnPagination :total="data.length"
+    <AnPagination :total="dataCount"
                   :page-size="pageSize"
                   @update:current-page="currentPage = $event"
                   @update:page-size="updatePageSize($event)"
                   :show-total-count="showTotalCount"
                   :show-page-size-selector="showPageSizeSelector"
+                  :on-change="handlePageChange"
     />
   </div>
 </template>
@@ -41,8 +42,9 @@ export default {
 </script>
 
 <script setup>
-import { ref, computed, watch } from 'vue';
+import {ref, computed, watch} from 'vue';
 import RenderSlot from './render-slot';
+import AnPagination from "@packages/pagination/index.vue";
 
 const props = defineProps({
   data: {
@@ -81,13 +83,22 @@ const props = defineProps({
     type: Boolean,
     default: false
   },
-  showPageSizeSelector:{
+  showPageSizeSelector: {
     type: Boolean,
     default: false
   },
-  paginationAlign:{
+  paginationAlign: {
     type: String,
     default: 'left'
+  },
+  dataCount: {
+    type: Number,
+    default: 0
+  },
+  onChange: {
+    type: Function,
+    default: () => {
+    }
   }
 });
 
@@ -118,6 +129,10 @@ const updatePageSize = (newSize) => {
   currentPage.value = 1; // 重置当前页码为第一页
 }
 
+const handlePageChange = () => {
+  props.onChange(currentPage.value);
+}
+
 </script>
 
 <style lang="scss" scoped>
@@ -128,7 +143,7 @@ const updatePageSize = (newSize) => {
   width: v-bind(width);
 }
 
-.pagination-container{
+.pagination-container {
   display: flex;
   justify-content: v-bind(paginationAlign);
   margin-top: 1rem;

@@ -39,6 +39,10 @@ const props = defineProps({
   showTotalCount: {
     type: Boolean,
     default: false
+  },
+  onChange: {
+    type: Function,
+    default: () => {}
   }
 });
 
@@ -62,6 +66,7 @@ function goToPage(page) {
   if (page >= 1 && page <= totalPages.value) {
     currentPage.value = page;
     emit('update:current-page', page);
+    props.onChange(page);
   }
 }
 
@@ -70,6 +75,7 @@ function prevPage() {
   if (currentPage.value > 1) {
     currentPage.value--;
     emit('update:current-page', currentPage.value);
+    props.onChange(currentPage.value);
   }
 }
 
@@ -78,6 +84,7 @@ function nextPage() {
   if (currentPage.value < totalPages.value) {
     currentPage.value++;
     emit('update:current-page', currentPage.value);
+    props.onChange(currentPage.value);
   }
 }
 
@@ -87,6 +94,7 @@ function onPageSizeChange(newSize) {
   // 重置当前页码为第一页
   currentPage.value = 1;
   emit('update:current-page', 1);
+  props.onChange(1);
 }
 
 // 页面大小选项

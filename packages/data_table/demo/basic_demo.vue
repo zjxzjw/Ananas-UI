@@ -4,10 +4,11 @@
                  :show-total-count="true"
                  :default-page-size="10"
                  :showPageSizeSelector="true"
-                 pagination-align="flex-left">
-    <an-data-table-column label="名称" prop="name" />
-    <an-data-table-column label="歌手" prop="people" />
-    <an-data-table-column label="专辑" prop="album" />
+                 pagination-align="flex-left"
+                 :data-count="20">
+    <an-data-table-column label="名称" prop="name"/>
+    <an-data-table-column label="歌手" prop="people"/>
+    <an-data-table-column label="专辑" prop="album"/>
     <an-data-table-column label="Actions" prop="action">
       <template #default="{ row }">
         <an-space>
@@ -20,7 +21,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import {ref} from 'vue';
 
 const tableData = ref([
   {name: '黄昏之时', people: 'RADWIMPS', album: '你的名字。'},

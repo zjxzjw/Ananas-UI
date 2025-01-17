@@ -110,6 +110,12 @@
 				type: 'String',
 				default: 'flex-start | center | flex-end',
 				explain: '对齐方式'
+			},
+			{
+                name: 'on-change',
+				type: 'Function',
+				default: '() => {}',
+				explain: '改变函数'
 			}
         ]
   }
