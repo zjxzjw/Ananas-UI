@@ -44,7 +44,6 @@ export default {
 <script setup>
 import {ref, computed, watch} from 'vue';
 import RenderSlot from './render-slot';
-import AnPagination from "@packages/pagination/index.vue";
 
 const props = defineProps({
   data: {
